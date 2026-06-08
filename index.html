@@ -172,12 +172,16 @@
                         <span class="slide-num">37</span>
                         <span class="slide-name">Datasets & Training Sources</span>
                     </li>
+                    <li class="menu-item" data-slide="40">
+    <span class="slide-num">38</span>
+    <span class="slide-name">Deployment & Cloud Infrastructure</span>
+</li>
                     <li class="menu-item" data-slide="37">
-                        <span class="slide-num">38</span>
+                        <span class="slide-num">39</span>
                         <span class="slide-name">Conclusion & Recommendations</span>
                     </li>
                     <li class="menu-item" data-slide="38">
-                        <span class="slide-num">39</span>
+                        <span class="slide-num">40</span>
                         <span class="slide-name">AI Ecosystem Libraries</span>
                     </li>
                 </ul>
@@ -393,31 +397,112 @@
                         </div>
                     </div>
                 </section>
+<section class="slide" id="slide-6">
+    <div class="slide-content">
 
-                <section class="slide" id="slide-6">
-                    <div class="slide-content">
-                        <h2 class="slide-title"><i class="fa-solid fa-sitemap"></i> Core Architectural Design: EDMMA with Apache Kafka</h2>
-                        <div class="grid-2-1">
-                            <div class="card glass">
-                                <h3>Why choose an Event-Driven Modular Monolith (EDMMA)?</h3>
-                                <ul class="styled-list">
-                                    <li><i class="fa-solid fa-arrow-right"></i> <strong>Microservices Pitfall:</strong> Introduces massive operational complexity, costly network overhead, and complex cross-boundary data tracking.</li>
-                                    <li><i class="fa-solid fa-arrow-right"></i> <strong>Traditional Monolith Drawback:</strong> Suffers severe performance bottlenecks and blocking when handling multi-tenant heavy AI inferencing synchronously.</li>
-                                    <li><i class="fa-solid fa-circle-check" style="color: var(--teal-color)"></i> <strong>The Hybrid Choice:</strong> Keeps the domain core secure and clean as a Modular Monolith in **C# .NET Core**, while offloading compute-heavy tasks asynchronously via **Apache Kafka** to distributed Python worker nodes.</li>
-                                </ul>
-                            </div>
-                            <div class="visual-placeholder">
-                                <div class="flow-chart">
-                                    <div class="flow-node dot-net">C# Core Monolith</div>
-                                    <div class="flow-arrow">events <i class="fa-solid fa-arrow-right"></i></div>
-                                    <div class="flow-node kafka">Apache Kafka</div>
-                                    <div class="flow-arrow">process <i class="fa-solid fa-arrow-right"></i></div>
-                                    <div class="flow-node python">Python AI Services</div>
-                                </div>
-                            </div>
-                        </div>
+        <h2 class="slide-title">
+            <i class="fa-solid fa-sitemap"></i>
+            Core Architectural Design: EDMMA with Apache Kafka
+        </h2>
+
+        <!-- Clickable Architecture Image -->
+        <div style="text-align:center; margin-bottom:25px;">
+
+            <a href="/Users/ibrahimamr/Downloads/Presentation_App/img/photo_1447-12-23 00.59.44.jpeg" target="_blank">
+
+                <img
+                    src="/Users/ibrahimamr/Downloads/Presentation_App/img/photo_1447-12-23 00.59.44.jpeg"
+                    alt="EDMMA Architecture"
+                    style="
+                        width:100%;
+                        max-width:950px;
+                        max-height:280px;
+                        object-fit:contain;
+                        border-radius:18px;
+                        box-shadow:0 10px 30px rgba(0,0,0,.25);
+                        cursor:pointer;
+                        transition:0.3s;
+                    "
+                    onmouseover="this.style.transform='scale(1.02)'"
+                    onmouseout="this.style.transform='scale(1)'"
+                >
+
+            </a>
+
+        </div>
+
+        <div class="grid-2-1">
+
+            <div class="card glass">
+
+                <h3>Why choose an Event-Driven Modular Monolith (EDMMA)?</h3>
+
+                <ul class="styled-list">
+
+                    <li>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <strong>Microservices Pitfall:</strong>
+                        Introduces massive operational complexity,
+                        costly network overhead,
+                        and complex cross-boundary data tracking.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <strong>Traditional Monolith Drawback:</strong>
+                        Suffers severe performance bottlenecks and blocking
+                        when handling multi-tenant heavy AI inferencing synchronously.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check" style="color: var(--teal-color)"></i>
+                        <strong>The Hybrid Choice:</strong>
+                        Keeps the domain core secure and clean as a
+                        <strong>C# .NET Core</strong>,
+                        while offloading compute-heavy tasks asynchronously via
+                        <strong>Apache Kafka</strong>
+                        to distributed Python worker nodes.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="visual-placeholder">
+
+                <div class="flow-chart">
+
+                    <div class="flow-node dot-net">
+                        C# Core Monolith
                     </div>
-                </section>
+
+                    <div class="flow-arrow">
+                        events
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                    <div class="flow-node kafka">
+                        Apache Kafka
+                    </div>
+
+                    <div class="flow-arrow">
+                        process
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                    <div class="flow-node python">
+                        Python AI Services
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
 
                 <section class="slide" id="slide-7">
                     <div class="slide-content">
@@ -675,169 +760,594 @@
                         </div>
                     </div>
                 </section>
+<section class="slide" id="slide-10">
+    <div class="slide-content">
 
-                <section class="slide" id="slide-10">
-                    <div class="slide-content">
-                        <h2 class="slide-title"><i class="fa-solid fa-file-invoice"></i> 1. Document Intelligence & Smart Verification</h2>
-                        <div class="grid-2-1">
-                            <div class="details-panel">
-                                <ul class="features-list">
-                                    <li>
-                                        <strong>Ownership Document Analysis</strong>
-                                        <p>Automated scanning of deeds, registries, and certificates to ensure full legal verification and prevent false asset assignment.</p>
-                                    </li>
-                                    <li>
-                                        <strong>Commercial Register Analysis</strong>
-                                        <p>Extracts meta-data from commercial corporate licenses of real estate developers to verify operational status and authenticity.</p>
-                                    </li>
-                                    <li>
-                                        <strong>Post Document Analysis</strong>
-                                        <p>Compares uploaded attachments against manually typed text fields to prevent deceptive or contradictory advertising.</p>
-                                    </li>
-                                    <li>
-                                        <strong>Project Document Analysis</strong>
-                                        <p>Parses engineering schematics, structural timelines, and site milestones submitted by developers to certify project phases.</p>
-                                    </li>
-                                    <li>
-                                        <strong>Document Analysis Core</strong>
-                                        <p>The centralized Optical Character Recognition (OCR) and document classifier node driving file type identification.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="graphic-panel">
-                                <div class="doc-scan-animation">
-                                    <i class="fa-solid fa-file-signature text-icon"></i>
-                                    <div class="scan-line"></div>
-                                </div>
-                                <div class="badge green">80% System Automation Ratio</div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        <h2 class="slide-title">
+            <i class="fa-solid fa-file-invoice"></i>
+            1. Document Intelligence & Smart Verification
+        </h2>
+<div class="mini-video-container">
 
-                <section class="slide" id="slide-11">
-                    <div class="slide-content">
-                        <h2 class="slide-title"><i class="fa-solid fa-eye"></i> 2. Computer Vision & Media Integrity</h2>
-                        <div class="grid-3">
-                            <div class="card glass">
-                                <div class="card-icon-header"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-                                <h3>Image Manipulation Detection</h3>
-                                <p>Detects digital tampering, airbrushing, or filters applied to structural imagery to guarantee honest visualization of asset conditions, wall cracks, or water leaks.</p>
-                            </div>
-                            <div class="card glass">
-                                <div class="card-icon-header"><i class="fa-solid fa-star-half-stroke"></i></div>
-                                <h3>Image Quality Scoring</h3>
-                                <p>Ranks incoming uploaded media based on resolution, illumination, and focus benchmarks—rewarding high-fidelity, professional images with elevated search rankings.</p>
-                            </div>
-                            <div class="card glass">
-                                <div class="card-icon-header"><i class="fa-solid fa-images"></i></div>
-                                <h3>Similar Listings (Deduplication)</h3>
-                                <p>Employs **FAISS (Facebook AI Similarity Search)** to index visual vector hashes, preventing brokers from re-uploading stolen photos under conflicting prices.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+    <div class="mini-video-card">
 
-                <section class="slide" id="slide-12">
-                    <div class="slide-content">
-                        <h2 class="slide-title"><i class="fa-solid fa-user-shield"></i> 3. Security, Authenticity & Anti-Fraud</h2>
-                        <div class="grid-2">
-                            <div class="card glass flex-row">
-                                <div class="icon-side"><i class="fa-solid fa-face-recognition"></i></div>
-                                <div class="content-side">
-                                    <h3>Face ID Verification</h3>
-                                    <p>Cross-checks live facial biometric frames against physical national ID records during onboarding to block identity theft entirely.</p>
-                                </div>
-                            </div>
-                            <div class="card glass flex-row">
-                                <div class="icon-side"><i class="fa-solid fa-shield-cat"></i></div>
-                                <div class="content-side">
-                                    <h3>Fake Property Detection</h3>
-                                    <p>Cross-references pricing trends against geographic registry averages to flag anomalous listings before they harm public seekers.</p>
-                                </div>
-                            </div>
-                            <div class="card glass flex-row">
-                                <div class="icon-side"><i class="fa-solid fa-credit-card"></i></div>
-                                <div class="content-side">
-                                    <h3>Payment Fraud Detection</h3>
-                                    <p>Monitors checkout loops for suspicious subscription jumps, credential stuffing, and card cloning attempts to isolate accounts.</p>
-                                </div>
-                            </div>
-                            <div class="card glass flex-row">
-                                <div class="icon-side"><i class="fa-solid fa-user-ninja"></i></div>
-                                <div class="content-side">
-                                    <h3>User Anomaly Detection</h3>
-                                    <p>Identifies aggressive scraping vectors, automated bot behaviors, and account-hijacking footprint signatures instantly.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        <video controls preload="metadata" poster="assets/posters/document.jpg">
+            <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/الدوكيومنت.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
-                <section class="slide" id="slide-13">
-                    <div class="slide-content" style="justify-content: flex-start;">
-                        <h2 class="slide-title"><i class="fa-solid fa-tags"></i> 4. Market Analytics & Intelligent Pricing</h2>
-                        <p class="slide-description" style="margin-bottom: 1rem;">Automated valuation engines and time-series algorithms that empower landlords, buyers, and enterprises.</p>
-                        <div class="grid-3" style="font-size: 0.8rem; gap: 1rem;">
-                            <div class="card glass" style="padding: 1.25rem;">
-                                <h3>Price Anomaly Detection</h3>
-                                <p>Catches extreme price outliers to protect novice buyers from predatory inflation and malicious baiting listings.</p>
-                            </div>
-                            <div class="card glass" style="padding: 1.25rem;">
-                                <h3>Price Suggestion Engine</h3>
-                                <p>Recommends optimal, competitive listing valuations based on historical localized sales, reducing time-to-close indices.</p>
-                            </div>
-                            <div class="card glass" style="padding: 1.25rem;">
-                                <h3>Price Forecasting</h3>
-                                <p>Projects localized valuation jumps and inflationary trajectories over multi-year margins using historical regression trees.</p>
-                            </div>
-                            <div class="card glass" style="padding: 1.25rem;">
-                                <h3>Market Trends Analysis</h3>
-                                <p>Extracts macro shifts, structural supply contractions, and rental preference patterns across demographic districts continuously.</p>
-                            </div>
-                            <div class="card glass" style="padding: 1.25rem;">
-                                <h3>Demand Prediction</h3>
-                                <p>Forecasts sector demand levels (residential, commercial, administrative) to orient real estate development timelines.</p>
-                            </div>
-                            <div class="card glass" style="padding: 1.25rem;">
-                                <h3>Demand & Revenue Forecasting</h3>
-                                <p>Calculates future occupancy and return-on-investment (ROI) yields for institutional investors and multi-property managers.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        <div class="video-caption">
+            <i class="fa-solid fa-circle-play"></i>
+            AI Document Intelligence Demo
+        </div>
 
-                <section class="slide" id="slide-14">
-                    <div class="slide-content">
-                        <h2 class="slide-title"><i class="fa-solid fa-file-signature"></i> 5. Financial Evaluation & Credit Risk Assessment</h2>
-                        <div class="grid-2-1">
-                            <div class="card glass">
-                                <h3>How do we ensure reliable tenant leasing and installment coverage?</h3>
-                                <ul class="styled-list">
-                                    <li><i class="fa-solid fa-circle-check"></i> <strong>Installment Risk Assessment:</strong> Evaluates buyer default potential based on declared debt-to-income limits and credit indicators, safeguarding developers from financial disruption.</li>
-                                    <li><i class="fa-solid fa-circle-check"></i> <strong>Rent Eligibility Assessment:</strong> Gauges tenant solvency ratios to predict long-term payment continuity and mitigate tenancy legal friction.</li>
-                                    <li><i class="fa-solid fa-circle-check"></i> <strong>Decision Engine Core:</strong> An algorithmic central evaluator that aggregates financial data inputs into a unified accept/reject recommendation model.</li>
-                                    <li><i class="fa-solid fa-circle-check"></i> <strong>Band Suggestion Handler:</strong> Suggests the safest pricing and payment plan tiers suited to an applicant's real-time purchasing budget.</li>
-                                </ul>
-                            </div>
-                            <div class="visual-placeholder flex-center">
-                                <div class="risk-meter">
-                                    <div class="meter-needle" style="transform: rotate(45deg)"></div>
-                                    <div class="risk-status red">Medium Risk Profile</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+    </div>
+
+    <div class="mini-video-card">
+
+        <video controls preload="metadata" poster="assets/posters/document.jpg">
+            <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/الدوكيومنت٢.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="video-caption">
+            <i class="fa-solid fa-circle-play"></i>
+            AI Document Intelligence Demo
+        </div>
+
+    </div>
+
+</div>
+
+
+
+        <div class="grid-2-1">
+
+            <div class="details-panel">
+                <ul class="features-list">
+
+                    <li>
+                        <strong>Ownership Document Analysis</strong>
+                        <p>
+                            Automated scanning of deeds, registries, and certificates
+                            to ensure full legal verification and prevent false asset assignment.
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Commercial Register Analysis</strong>
+                        <p>
+                            Extracts meta-data from commercial corporate licenses of
+                            real estate developers to verify operational status and authenticity.
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Post Document Analysis</strong>
+                        <p>
+                            Compares uploaded attachments against manually typed text
+                            fields to prevent deceptive or contradictory advertising.
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Project Document Analysis</strong>
+                        <p>
+                            Parses engineering schematics, structural timelines,
+                            and site milestones submitted by developers to certify project phases.
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Document Analysis Core</strong>
+                        <p>
+                            The centralized Optical Character Recognition (OCR)
+                            and document classifier node driving file type identification.
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="graphic-panel">
+
+                <div class="doc-scan-animation">
+                    <i class="fa-solid fa-file-signature text-icon"></i>
+                    <div class="scan-line"></div>
+                </div>
+
+                <div class="badge green">
+                    80% System Automation Ratio
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section class="slide" id="slide-11">
+    <div class="slide-content">
+
+        <h2 class="slide-title">
+            <i class="fa-solid fa-eye"></i>
+            2. Computer Vision & Media Integrity
+        </h2>
+
+        <!-- Videos -->
+        <div class="mini-video-container">
+
+            <div class="mini-video-card">
+
+                <video
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture>
+                    <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/2026-06-08 19-20-39.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-camera"></i>
+                    Image AI
+                </div>
+
+            </div>
+
+        <div class="grid-3">
+
+            <div class="card glass">
+                <div class="card-icon-header">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+
+                <h3>Image Manipulation Detection</h3>
+
+                <p>
+                    Detects digital tampering, airbrushing, or filters applied
+                    to structural imagery to guarantee honest visualization of
+                    asset conditions, wall cracks, or water leaks.
+                </p>
+            </div>
+
+            <div class="card glass">
+
+                <div class="card-icon-header">
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+
+                <h3>Image Quality Scoring</h3>
+
+                <p>
+                    Ranks incoming uploaded media based on resolution,
+                    illumination, and focus benchmarks—rewarding high-fidelity,
+                    professional images with elevated search rankings.
+                </p>
+
+            </div>
+
+            <div class="card glass">
+
+                <div class="card-icon-header">
+                    <i class="fa-solid fa-images"></i>
+                </div>
+
+                <h3>Similar Listings (Deduplication)</h3>
+
+                <p>
+                    Employs FAISS (Facebook AI Similarity Search) to index
+                    visual vector hashes, preventing brokers from re-uploading
+                    stolen photos under conflicting prices.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section class="slide" id="slide-12">
+    <div class="slide-content">
+
+        <h2 class="slide-title">
+            <i class="fa-solid fa-user-shield"></i>
+            3. Security, Authenticity & Anti-Fraud
+        </h2>
+
+        <!-- Videos -->
+        <div class="mini-video-container">
+
+            <div class="mini-video-card">
+
+                <video
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture>
+
+                    <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/2026-05-08 04-40-34.mp4" type="video/mp4">
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-face-smile"></i>
+                    Face ID Verification
+                </div>
+
+            </div>
+
+            <div class="mini-video-card">
+
+                <video
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture>
+
+                    <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/الفيس ايدي.mp4" type="video/mp4">
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-shield-halved"></i>
+                      Face ID-2 Verification
+                </div>
+
+            </div>
+
+            <div class="mini-video-card">
+
+                <video
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture>
+
+                    <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/البلوك اقتراح والفعاليات المشبوهه.mp4" type="video/mp4">
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-credit-card"></i>
+                    Payment Fraud Detection & User Anomaly Detection
+                </div>
+
+            </div>
+
+             <div class="mini-video-card">
+
+                <video
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture>
+
+                    <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/2026-06-08 19-20-39.mp4" type="video/mp4">
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-credit-card"></i>
+Fake Property Detection
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="grid-2">
+
+            <div class="card glass flex-row">
+                <div class="icon-side">
+                    <i class="fa-solid fa-face-recognition"></i>
+                </div>
+
+                <div class="content-side">
+                    <h3>Face ID Verification</h3>
+
+                    <p>
+                        Cross-checks live facial biometric frames against physical
+                        national ID records during onboarding to block identity theft
+                        entirely.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card glass flex-row">
+
+                <div class="icon-side">
+                    <i class="fa-solid fa-shield-cat"></i>
+                </div>
+
+                <div class="content-side">
+                    <h3>Fake Property Detection</h3>
+
+                    <p>
+                        Cross-references pricing trends against geographic registry
+                        averages to flag anomalous listings before they harm public
+                        seekers.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="card glass flex-row">
+
+                <div class="icon-side">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+
+                <div class="content-side">
+                    <h3>Payment Fraud Detection</h3>
+
+                    <p>
+                        Monitors checkout loops for suspicious subscription jumps,
+                        credential stuffing, and card cloning attempts to isolate
+                        accounts.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="card glass flex-row">
+
+                <div class="icon-side">
+                    <i class="fa-solid fa-user-ninja"></i>
+                </div>
+
+                <div class="content-side">
+                    <h3>User Anomaly Detection</h3>
+
+                    <p>
+                        Identifies aggressive scraping vectors, automated bot
+                        behaviors, and account-hijacking footprint signatures
+                        instantly.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section class="slide" id="slide-13">
+
+    <div class="slide-content" style="justify-content:flex-start;">
+
+        <h2 class="slide-title">
+            <i class="fa-solid fa-tags"></i>
+            4. Market Analytics & Intelligent Pricing
+        </h2>
+
+        <!-- Videos -->
+        <div style="
+            display:flex;
+            gap:15px;
+            justify-content:center;
+            align-items:flex-start;
+            margin:20px 0;
+        ">
+
+            <div class="mini-video-card" style="flex:1;max-width:32%;">
+
+                <video
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture
+                    style="width:100%;">
+
+                    <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/الماركت.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-chart-line"></i>
+                    AI Market Analytics Demo
+                </div>
+
+            </div>
+
+            <div class="mini-video-card" style="flex:1;max-width:32%;">
+
+                <video
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture
+                    style="width:100%;">
+
+                    <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/معلومات البوست٢.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Price Suggestion Demo
+                </div>
+
+            </div>
+
+            <div class="mini-video-card" style="flex:1;max-width:32%;">
+
+                <video
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture
+                    style="width:100%;">
+
+                    <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/معلومات البوست.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    Price Forecast Demo
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="slide-description" style="margin-bottom:1rem;">
+            Automated valuation engines and time-series algorithms that empower landlords,
+            buyers, and enterprises.
+        </p>
+
+        <div class="grid-3" style="font-size:0.8rem;gap:1rem;">
+
+            <div class="card glass" style="padding:1.25rem;">
+                <h3>Price Anomaly Detection</h3>
+                <p>
+                    Catches extreme price outliers to protect novice buyers from
+                    predatory inflation and malicious baiting listings.
+                </p>
+            </div>
+
+            <div class="card glass" style="padding:1.25rem;">
+                <h3>Price Suggestion Engine</h3>
+                <p>
+                    Recommends optimal, competitive listing valuations based on
+                    historical localized sales, reducing time-to-close indices.
+                </p>
+            </div>
+
+            <div class="card glass" style="padding:1.25rem;">
+                <h3>Price Forecasting</h3>
+                <p>
+                    Projects localized valuation jumps and inflationary trajectories
+                    over multi-year margins using historical regression trees.
+                </p>
+            </div>
+
+            <div class="card glass" style="padding:1.25rem;">
+                <h3>Market Trends Analysis</h3>
+                <p>
+                    Extracts macro shifts, structural supply contractions, and rental
+                    preference patterns across demographic districts continuously.
+                </p>
+            </div>
+
+            <div class="card glass" style="padding:1.25rem;">
+                <h3>Demand Prediction</h3>
+                <p>
+                    Forecasts sector demand levels (residential, commercial,
+                    administrative) to orient real estate development timelines.
+                </p>
+            </div>
+
+            <div class="card glass" style="padding:1.25rem;">
+                <h3>Demand & Revenue Forecasting</h3>
+                <p>
+                    Calculates future occupancy and return-on-investment (ROI)
+                    yields for institutional investors and multi-property managers.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="slide" id="slide-14">
+    <div class="slide-content">
+        <h2 class="slide-title">
+            <i class="fa-solid fa-file-signature"></i>
+            5. Financial Evaluation & Credit Risk Assessment
+        </h2>
+
+        <!-- Video -->
+        <div class="video-container" style="margin-bottom: 20px; text-align:center;">
+            <video
+                autoplay
+                muted
+                loop
+                playsinline
+                controls
+                style="width:100%; max-width:900px; border-radius:16px; box-shadow:0 8px 25px rgba(0,0,0,.25);">
+                <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/2026-06-08 22-24-07.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="grid-2-1">
+            <div class="card glass">
+                <h3>How do we ensure reliable tenant leasing and installment coverage?</h3>
+
+                <ul class="styled-list">
+                    <li><i class="fa-solid fa-circle-check"></i>
+                        <strong>Installment Risk Assessment:</strong>
+                        Evaluates buyer default potential based on declared debt-to-income limits and credit indicators,
+                        safeguarding developers from financial disruption.
+                    </li>
+
+                    <li><i class="fa-solid fa-circle-check"></i>
+                        <strong>Rent Eligibility Assessment:</strong>
+                        Gauges tenant solvency ratios to predict long-term payment continuity and mitigate tenancy legal friction.
+                    </li>
+
+                    <li><i class="fa-solid fa-circle-check"></i>
+                        <strong>Decision Engine Core:</strong>
+                        An algorithmic central evaluator that aggregates financial data inputs into a unified accept/reject recommendation model.
+                    </li>
+
+                    <li><i class="fa-solid fa-circle-check"></i>
+                        <strong>Band Suggestion Handler:</strong>
+                        Suggests the safest pricing and payment plan tiers suited to an applicant's real-time purchasing budget.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="visual-placeholder flex-center">
+                <div class="risk-meter">
+                    <div class="meter-needle" style="transform: rotate(45deg)"></div>
+                    <div class="risk-status red">Medium Risk Profile</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
                 <section class="slide" id="slide-15">
                     <div class="slide-content">
                         <h2 class="slide-title"><i class="fa-solid fa-file-contract"></i> 6. Smart Contracts & Deal Advisory</h2>
+                          <div class="video-container" style="margin-bottom: 20px; text-align:center;">
+            <video
+                muted
+                loop
+                playsinline
+                controls
+                style="width:100%; max-width:900px; border-radius:16px; box-shadow:0 8px 25px rgba(0,0,0,.25);">
+                <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/التوقيعات.mp4" type="video/mp4">
+            </video>
+        </div>
+
+         <div class="video-container" style="margin-bottom: 20px; text-align:center;">
+            <video
+                muted
+                loop
+                playsinline
+                controls
+                style="width:100%; max-width:900px; border-radius:16px; box-shadow:0 8px 25px rgba(0,0,0,.25);">
+                <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/التوقيعات٢.mp4" type="video/mp4">
+            </video>
+        </div>
                         <div class="grid-3">
                             <div class="card glass">
                                 <h3>Contract Risk Flagging</h3>
                                 <p><strong>Contract Risk Flagging:</strong> Scans legal text entries within submitted drafts, highlight asymmetric clauses, hidden fees, or problematic legal terms.</p>
                             </div>
+                            
                             <div class="card glass">
                                 <h3>Clause Suggestion</h3>
                                 <p><strong>Contract Clause Suggestion:</strong> Advises on adding vital protective terms (such as delayed payment penalties or maintenance bounds) customized to the asset type.</p>
@@ -849,142 +1359,523 @@
                         </div>
                     </div>
                 </section>
+<section class="slide" id="slide-16">
+    <div class="slide-content" style="justify-content: flex-start;">
 
-                <section class="slide" id="slide-16">
-                    <div class="slide-content" style="justify-content: flex-start;">
-                        <h2 class="slide-title"><i class="fa-solid fa-magnifying-glass-chart"></i> 7. Semantic Search & Personal Recommendation Loops</h2>
-                        <p class="slide-description" style="margin-bottom: 1rem;">Deep informational retrieval layers that transcend literal text-matching to map true context intent.</p>
-                        <div class="grid-3" style="font-size: 0.8rem; gap: 1rem;">
-                            <div class="card glass" style="padding: 1.25rem;">
-                                <h3>Query Understanding</h3>
-                                <p>Parses colloquial semantic requests, isolating attributes (e.g., area size, proximity to transport) into relational parameters.</p>
-                            </div>
-                            <div class="card glass" style="padding: 1.25rem;">
-                                <h3>Semantic Ranking Core</h3>
-                                <p>Scores and renders results based on contextual relevance, outperforming basic chronological or lexical search sorts.</p>
-                            </div>
-                            <div class="card glass" style="padding: 1.25rem;">
-                                <h3>Similar Listings Detection</h3>
-                                <p>Identifies duplicate listings across varying brokerages, keeping customer feeds tidy and free of spam clutter.</p>
-                            </div>
-                            <div class="card glass" style="padding: 1.25rem;">
-                                <h3>Personalized Feed Loop</h3>
-                                <p>Assembles a unique landing experience for users, adjusting content dynamically to match their click logs and browsing history.</p>
-                            </div>
-                            <div class="card glass" style="padding: 1.25rem;">
-                                <h3>Related Posts Recomm.</h3>
-                                <p>Suggests comparable residential and commercial assets in parallel neighborhoods when a user explores a specific detail page.</p>
-                            </div>
-                            <div class="card glass" style="padding: 1.25rem;">
-                                <h3>User-to-User Matching</h3>
-                                <p>Directly bridges consumer requirements and newly launched properties, triggering alert pathways without relying on human brokers.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        <h2 class="slide-title">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            7. Semantic Search & Personal Recommendation Loops
+        </h2>
 
-                <section class="slide" id="slide-17">
-                    <div class="slide-content">
-                        <h2 class="slide-title"><i class="fa-solid fa-comments"></i> 8. NLP Core & Autonomous Broker Agents</h2>
-                        <div class="grid-2-1">
-                            <div class="card glass">
-                                <h3>The Intelligent Autonomous Advisory Agent (AI Agent)</h3>
-                                <p>An embedded conversational system that cross-references databases, parses context, and actively calculates attribute scores to direct users toward ideal assets.</p>
-                                <ul class="styled-list">
-                                    <li><i class="fa-solid fa-check"></i> <strong>Text Proposals:</strong> Generates highly engaging, SEO-optimized marketing descriptions for published units automatically at checkout.</li>
-                                    <li><i class="fa-solid fa-check"></i> <strong>Auto Reply Suggestion:</strong> Supplies landlords with prompt, contextually aware responses to handle frequent consumer booking inquiries.</li>
-                                    <li><i class="fa-solid fa-check"></i> <strong>Language & Dialect Detection:</strong> Identifies regional phrasing styles to align the model's tone with the client's cultural background.</li>
-                                </ul>
-                            </div>
-                            <div class="visual-placeholder flex-center">
-                                <div class="bot-avatar-container">
-                                    <div class="bot-core"><i class="fa-solid fa-robot"></i></div>
-                                    <div class="pulse-ring"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        <p class="slide-description" style="margin-bottom: 1rem;">
+            Deep informational retrieval layers that transcend literal text-matching to map true context intent.
+        </p>
 
-                <section class="slide" id="slide-18">
-                    <div class="slide-content" style="justify-content: flex-start;">
-                        <h2 class="slide-title"><i class="fa-solid fa-user-xmark"></i> 9. Content Safety, Moderation & Spam Filter Engine</h2>
-                        <p class="slide-description" style="margin-bottom: 1rem;">Automated checking layers that clean text descriptions and shield user communication channels from exploitation.</p>
-                        <div class="grid-3" style="font-size: 0.8rem; gap: 1rem;">
-                            <div class="card glass" style="padding: 1.25rem;">
-                                <h3>Content Moderation</h3>
-                                <p>Instantly scans text inputs and image uploads to suppress vulgarity, policy infractions, or unauthorized external links.</p>
-                            </div>
-                            <div class="card glass" style="padding: 1.25rem;">
-                                <h3>Spam Detection</h3>
-                                <p>Blocks high-frequency duplicate list submissions from brokers attempting to manipulate platform presence.</p>
-                            </div>
-                            <div class="card glass" style="padding: 1.25rem;">
-                                <h3>Toxicity Scoring</h3>
-                                <p>Evaluates text interaction threads to isolate aggression, extortion patterns, or verbal abuse in real-time chat spaces.</p>
-                            </div>
-                            <div class="card glass" style="padding: 1.25rem;">
-                                <h3>Sentiment Analysis</h3>
-                                <p>Tracks user sentiment trends across property reviews to capture consumer dissatisfaction or platform satisfaction indexes.</p>
-                            </div>
-                            <div class="card glass" style="padding: 1.25rem;">
-                                <h3>Blocked Suggestions</h3>
-                                <p>Flags persistent bad actors for administrative banning and maintains systemic network blacklists dynamically.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        <!-- Video -->
+        <div class="mini-video-showcase" style="margin-bottom:20px;">
+            <div class="mini-video-card">
 
-                <section class="slide" id="slide-19">
-                    <div class="slide-content">
-                        <h2 class="slide-title"><i class="fa-solid fa-headset"></i> 10. Support Intelligence & Ticket Routing Automation</h2>
-                        <div class="grid-2">
-                            <div class="card glass">
-                                <h3>Automating CRM & Helpdesk Pipelines</h3>
-                                <ul class="styled-list">
-                                    <li><i class="fa-solid fa-arrow-right"></i> <strong>Ticket Classification:</strong> Categorizes incoming user support requests (financial, technical, or compliance disputes) into correct technical resolution channels automatically.</li>
-                                    <li><i class="fa-solid fa-arrow-right"></i> <strong>Priority Scoring Logic:</strong> Identifies high-risk legal complaints and escrow issues, escalating them past standard informational queries.</li>
-                                    <li><i class="fa-solid fa-arrow-right"></i> <strong>Smart Report Analysis:</strong> Deciphers text logs linked to reported properties to uncover systemic listing fraud patterns.</li>
-                                </ul>
-                            </div>
-                            <div class="card glass">
-                                <h3>Decision Support & Interaction Summaries</h3>
-                                <ul class="styled-list">
-                                    <li><i class="fa-solid fa-arrow-right"></i> <strong>Offer Ranking Sort:</strong> Orders incoming financial offers on a landlord's dashboard based on price alignment and buyer credibility weights.</li>
-                                    <li><i class="fa-solid fa-arrow-right"></i> <strong>User Behavior Summary:</strong> Generates a concise summary of a user's recent interactions for helpdesk agents, accelerating problem resolution.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <video
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture>
 
-                <section class="slide" id="slide-20">
-                    <div class="slide-content">
-                        <h2 class="slide-title"><i class="fa-solid fa-robot"></i> Autonomous AI Chatbot Execution Logic</h2>
-                        <div class="grid-2-1">
-                            <div class="card glass">
-                                <h3>Query Parsing, Background Retrieval, and Scoring</h3>
-                                <p>The Chatbot acts as an independent Intelligent Agent, continuous mapping consumer desires against newly submitted properties:</p>
-                                <ul class="styled-list" style="margin-top: 1rem; font-size: 0.9rem;">
-                                    <li><i class="fa-solid fa-brain"></i> <strong>Semantic Query Parsing:</strong> Translates user requests into high-dimensional vector embeddings, grasping structural intents beyond keyword matching.</li>
-                                    <li><i class="fa-solid fa-magnifying-glass-chart"></i> <strong>Background Matching:</strong> Runs continuous evaluation cycles to align recorded customer requirements with incoming listings the moment they go live.</li>
-                                    <li><i class="fa-solid fa-star"></i> <strong>Match Scoring Engine:</strong> Assigns an absolute percentage accuracy score to property profiles based on consumer budget constraints and structural inputs.</li>
-                                    <li><i class="fa-solid fa-handshake"></i> <strong>Auto Negotiation Matrix:</strong> Guides conversational bidding loops, advising clients on market ranges to successfully finalize transactions.</li>
-                                </ul>
-                            </div>
-                            <div class="visual-placeholder flex-center" style="flex-direction: column; justify-content: space-around; padding: 1.5rem; background: rgba(0,0,0,0.2); border-radius: 12px;">
-                                <div class="ai-processing-box" style="position: relative; text-align: center; width: 100%;">
-                                    <div class="pulse-ring" style="position: absolute; width: 100px; height: 100px; border: 2px solid var(--gold-color); border-radius: 50%; left: calc(50% - 50px); top: -20px; animation: pulsate 2s infinite ease-out;"></div>
-                                    <i class="fa-solid fa-gears fa-spin" style="font-size: 4rem; color: var(--gold-color); z-index: 2; position: relative;"></i>
-                                </div>
-                                <div class="score-card-preview" style="background: rgba(255,255,255,0.05); padding: 0.8rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); width: 90%; text-align: center; margin-top: 1rem;">
-                                    <span style="font-size: 0.8rem; color: var(--text-secondary); display: block; margin-bottom: 0.3rem;">Calculating Semantic Affinity</span>
-                                    <span style="font-size: 1.8rem; font-weight: 800; color: var(--teal-color); font-family: var(--font-english)">94.8% Match</span>
-                                </div>
-                            </div>
-                        </div>
+                    <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/الريكومنديشن والبحث.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    AI Semantic Search & Recommendation Demo
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid-3" style="font-size:0.8rem;gap:1rem;">
+
+            <div class="card glass" style="padding:1.25rem;">
+                <h3>Query Understanding</h3>
+                <p>Parses colloquial semantic requests, isolating attributes (e.g., area size, proximity to transport) into relational parameters.</p>
+            </div>
+
+            <div class="card glass" style="padding:1.25rem;">
+                <h3>Semantic Ranking Core</h3>
+                <p>Scores and renders results based on contextual relevance, outperforming basic chronological or lexical search sorts.</p>
+            </div>
+
+            <div class="card glass" style="padding:1.25rem;">
+                <h3>Similar Listings Detection</h3>
+                <p>Identifies duplicate listings across varying brokerages, keeping customer feeds tidy and free of spam clutter.</p>
+            </div>
+
+            <div class="card glass" style="padding:1.25rem;">
+                <h3>Personalized Feed Loop</h3>
+                <p>Assembles a unique landing experience for users, adjusting content dynamically to match their click logs and browsing history.</p>
+            </div>
+
+            <div class="card glass" style="padding:1.25rem;">
+                <h3>Related Posts Recomm.</h3>
+                <p>Suggests comparable residential and commercial assets in parallel neighborhoods when a user explores a specific detail page.</p>
+            </div>
+
+            <div class="card glass" style="padding:1.25rem;">
+                <h3>User-to-User Matching</h3>
+                <p>Directly bridges consumer requirements and newly launched properties, triggering alert pathways without relying on human brokers.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="slide" id="slide-17">
+    <div class="slide-content">
+
+        <h2 class="slide-title">
+            <i class="fa-solid fa-comments"></i>
+            8. NLP Core & Autonomous Broker Agents
+        </h2>
+
+        <div class="grid-2-1">
+
+            <!-- Left Content -->
+            <div class="card glass">
+
+                <h3>The Intelligent Autonomous Advisory Agent (AI Agent)</h3>
+
+                <p>
+                    An embedded conversational system that cross-references databases,
+                    parses context, and actively calculates attribute scores to direct
+                    users toward ideal assets.
+                </p>
+
+                <ul class="styled-list">
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <strong>Text Proposals:</strong>
+                        Generates highly engaging, SEO-optimized marketing descriptions
+                        for published units automatically at checkout.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <strong>Auto Reply Suggestion:</strong>
+                        Supplies landlords with prompt, contextually aware responses to
+                        handle frequent consumer booking inquiries.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        <strong>Language & Dialect Detection:</strong>
+                        Identifies regional phrasing styles to align the model's tone
+                        with the client's cultural background.
+                    </li>
+                </ul>
+
+            </div>
+
+            <div style="display:flex;flex-direction:column;gap:15px;justify-content:center;align-items:center;">
+
+                <div class="mini-video-card" style="width:100%;">
+
+                    <video    
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture>
+
+                        <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/معالجه الكتابه.mp4" type="video/mp4">
+
+                    </video>
+
+                    <div class="video-caption">
+                        <i class="fa-solid fa-robot"></i>
+                        Text Proposals Demo
                     </div>
-                </section>
+
+                </div>
+
+                <div class="mini-video-card" style="width:100%;">
+
+                    <video
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture>
+
+                        <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/المسدج.mp4" type="video/mp4">
+
+                    </video>
+
+                    <div class="video-caption">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        Auto Reply Demo
+                    </div>
+
+                </div>
+
+                  <div class="mini-video-card" style="width:100%;">
+
+                    <video
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture>
+
+                        <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/الردود الوحشه١.mp4" type="video/mp4">
+
+                    </video>
+
+                    <div class="video-caption">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        Auto Reply -2 Demo
+                    </div>
+
+                </div>
+
+                <div class="mini-video-card" style="width:100%;">
+
+                    <video
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture>
+
+                        <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/الريكومنديشن والبحث.mp4" type="video/mp4">
+
+                    </video>
+
+                    <div class="video-caption">
+                        <i class="fa-solid fa-language"></i>
+                        Language Detection Demo
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section class="slide" id="slide-18">
+    <div class="slide-content" style="justify-content:flex-start;">
+
+        <h2 class="slide-title">
+            <i class="fa-solid fa-user-xmark"></i>
+            9. Content Safety, Moderation & Spam Filter Engine
+        </h2>
+
+        <p class="slide-description" style="margin-bottom:10px;">
+            Automated checking layers that clean text descriptions and shield user communication channels from exploitation.
+        </p>
+
+        <!-- Videos -->
+        <div style="
+            display:flex;
+            gap:15px;
+            justify-content:center;
+            margin-bottom:15px;
+        ">
+
+            <div class="mini-video-card" style="width:48%;">
+
+                <video
+                    style="height:170px;object-fit:cover;"
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture>
+
+                    <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/البلوك اقتراح والفعاليات المشبوهه.mp4" type="video/mp4">
+
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    Content Moderation & Blocked Suggestions
+                </div>
+
+            </div>
+
+            <div class="mini-video-card" style="width:48%;">
+
+                <video
+                    style="height:170px;object-fit:cover;"
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture>
+
+                    <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/السبام.mp4" type="video/mp4">
+
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-ban"></i>
+                    Spam, Sentiment & Toxicity
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Cards -->
+        <div style="
+            display:grid;
+            grid-template-columns:repeat(5,1fr);
+            gap:10px;
+            font-size:0.72rem;
+        ">
+
+            <div class="card glass" style="padding:12px;">
+                <h3>Content Moderation</h3>
+                <p>Scans text and images to suppress policy violations and harmful content.</p>
+            </div>
+
+            <div class="card glass" style="padding:12px;">
+                <h3>Spam Detection</h3>
+                <p>Blocks duplicate submissions and suspicious posting behavior.</p>
+            </div>
+
+            <div class="card glass" style="padding:12px;">
+                <h3>Toxicity Scoring</h3>
+                <p>Detects abusive language and aggressive communication patterns.</p>
+            </div>
+
+            <div class="card glass" style="padding:12px;">
+                <h3>Sentiment Analysis</h3>
+                <p>Measures user satisfaction and review sentiment automatically.</p>
+            </div>
+
+            <div class="card glass" style="padding:12px;">
+                <h3>Blocked Suggestions</h3>
+                <p>Identifies repeat offenders and maintains dynamic blacklists.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section class="slide" id="slide-19">
+    <div class="slide-content" style="justify-content:flex-start;">
+
+        <h2 class="slide-title">
+            <i class="fa-solid fa-headset"></i>
+            10. Support Intelligence & Ticket Routing Automation
+        </h2>
+
+        <!-- Video -->
+        <div class="mini-video-showcase" style="margin-bottom:20px;display:flex;justify-content:center;">
+
+            <div class="mini-video-card" style="width:60%;">
+
+                <video
+                    style="height:230px;object-fit:cover;"
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture>
+
+                    <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/السبام.mp4" type="video/mp4">
+
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-headset"></i>
+                    Support Intelligence & Ticket Routing Demo
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Cards -->
+        <div class="grid-2" style="gap:15px;">
+
+            <div class="card glass">
+                <h3>Automating CRM & Helpdesk Pipelines</h3>
+
+                <ul class="styled-list">
+                    <li>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <strong>Ticket Classification:</strong>
+                        Categorizes incoming user support requests into the correct resolution channel automatically.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <strong>Priority Scoring Logic:</strong>
+                        Identifies urgent legal complaints and escrow issues for immediate escalation.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <strong>Smart Report Analysis:</strong>
+                        Analyzes reported property logs to detect recurring fraud patterns.
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="card glass">
+
+                <h3>Decision Support & Interaction Summaries</h3>
+
+                <ul class="styled-list">
+                    <li>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <strong>Offer Ranking Sort:</strong>
+                        Orders financial offers based on buyer credibility and pricing alignment.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <strong>User Behavior Summary:</strong>
+                        Generates concise interaction summaries for support agents to accelerate resolution.
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="slide" id="slide-20">
+    <div class="slide-content" style="justify-content:flex-start;">
+
+        <h2 class="slide-title">
+            <i class="fa-solid fa-robot"></i>
+            Autonomous AI Chatbot Execution Logic
+        </h2>
+
+        <!-- Video -->
+        <div class="mini-video-showcase"
+             style="display:flex;justify-content:center;margin-bottom:20px;">
+
+            <div class="mini-video-card" style="width:60%;">
+
+                <video
+                    style="height:230px;object-fit:cover;"
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture>
+
+                    <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/2026-06-09 02-01-40.mp4" type="video/mp4">
+
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-robot"></i>
+                    Autonomous AI Chatbot agent Demo
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Content -->
+        <div class="grid-2-1">
+
+            <div class="card glass">
+
+                <h3>Query Parsing, Background Retrieval, and Scoring</h3>
+
+                <p>
+                    The Chatbot acts as an independent Intelligent Agent,
+                    continuously mapping consumer requirements against newly
+                    submitted properties.
+                </p>
+
+                <ul class="styled-list" style="margin-top:1rem;font-size:0.9rem;">
+
+                    <li>
+                        <i class="fa-solid fa-brain"></i>
+                        <strong>Semantic Query Parsing:</strong>
+                        Translates user requests into high-dimensional vector
+                        embeddings beyond keyword matching.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        <strong>Background Matching:</strong>
+                        Continuously compares saved customer preferences with
+                        newly published listings.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-star"></i>
+                        <strong>Match Scoring Engine:</strong>
+                        Calculates an accuracy percentage based on budget,
+                        location, and property attributes.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-handshake"></i>
+                        <strong>Auto Negotiation Matrix:</strong>
+                        Recommends optimal negotiation strategies using live
+                        market intelligence.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="card glass flex-center"
+                 style="flex-direction:column;gap:20px;">
+
+                <i class="fa-solid fa-gears fa-spin"
+                   style="font-size:4rem;color:var(--gold-color);"></i>
+
+                <div class="score-card-preview"
+                     style="background:rgba(255,255,255,.05);
+                            padding:1rem;
+                            border-radius:10px;
+                            width:90%;
+                            text-align:center;">
+
+                    <span style="display:block;
+                                 font-size:.85rem;
+                                 color:var(--text-secondary);
+                                 margin-bottom:.4rem;">
+
+                        Calculating Semantic Affinity
+
+                    </span>
+
+                    <span style="font-size:2rem;
+                                 font-weight:800;
+                                 color:var(--teal-color);
+                                 font-family:var(--font-english);">
+
+                        94.8% Match
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
                 <section class="slide" id="slide-21">
                     <div class="slide-content">
@@ -1040,99 +1931,434 @@
                         </div>
                     </div>
                 </section>
+<section class="slide" id="slide-23">
 
-                <section class="slide" id="slide-23">
-                    <div class="slide-content">
-                        <h2 class="slide-title"><i class="fa-solid fa-key"></i> A. Two-Factor Authentication & Secure Access (2FA)</h2>
-                        <div class="grid-2-1">
-                            <div class="card glass">
-                                <h3>MFA Protection Barriers</h3>
-                                <p>Ensures true account ownership and blocks malicious injection attempts across high-risk legal transaction contexts.</p>
-                                <ul class="styled-list" style="margin-top: 1rem;">
-                                    <li><i class="fa-solid fa-shield"></i> <strong>One-Time Passwords (OTP):</strong> Generates cryptographic, time-boxed (5 minutes) validation digits dispatched to verified mobile networks.</li>
-                                    <li><i class="fa-solid fa-lock"></i> <strong>JWT Security:</strong> Secures stateful downstream APIs with short-lived JSON Web Tokens paired with encrypted rolling refresh keys.</li>
-                                    <li><i class="fa-solid fa-triangle-exclamation"></i> <strong>Brute-Force Shields:</strong> Monitors login failure frequencies, freezing target user accounts automatically during password-guessing attacks.</li>
-                                </ul>
-                            </div>
-                            <div class="visual-placeholder flex-center">
-                                <div class="secure-phone-animation" style="position: relative; text-align: center;">
-                                    <i class="fa-solid fa-mobile-screen-button" style="font-size: 6rem; color: var(--teal-color)"></i>
-                                    <div class="otp-badge" style="position: absolute; background: var(--gold-color); color: #000; padding: 0.2rem 0.6rem; border-radius: 8px; font-weight: 800; font-family: var(--font-english); font-size: 0.9rem; top: 40%; left: calc(50% - 1.8rem);">5 8 2 1</div>
-                                </div>
-                            </div>
-                        </div>
+    <div class="slide-content" style="justify-content:flex-start;">
+
+        <h2 class="slide-title">
+            <i class="fa-solid fa-key"></i>
+            A. Two-Factor Authentication & Secure Access (2FA)
+        </h2>
+
+        <!-- Video -->
+        <div class="mini-video-showcase"
+             style="display:flex;justify-content:center;margin-bottom:20px;">
+
+            <div class="mini-video-card" style="width:60%;">
+
+                <video
+                    style="height:220px;object-fit:cover;"
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture>
+
+                    <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/2FAVideo.mp4" type="video/mp4">
+
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    TOTP Authentication Demo
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Content -->
+        <div class="grid-2-1">
+
+            <div class="card glass">
+
+                <h3>Time-Based One-Time Password (TOTP) Authentication</h3>
+
+                <p>
+                    Provides an intelligent app-based authentication layer that
+                    validates user identity through time-synchronized one-time
+                    passwords, ensuring secure access and preventing unauthorized
+                    login attempts.
+                </p>
+
+                <ul class="styled-list" style="margin-top:1rem;">
+
+                    <li>
+                        <i class="fa-solid fa-clock"></i>
+                        <strong>30-Second TOTP Codes:</strong>
+                        Dynamic 6-digit passwords generated locally and refreshed
+                        every 30 seconds.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-qrcode"></i>
+                        <strong>Secure QR Enrollment:</strong>
+                        Encrypted device pairing with authenticator applications
+                        using shared secrets.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-shield"></i>
+                        <strong>Replay Protection:</strong>
+                        Ensures each verification code is accepted only once,
+                        blocking reuse and replay attacks.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="visual-placeholder flex-center">
+
+                <div class="secure-phone-animation"
+                     style="position:relative;text-align:center;">
+
+                    <i class="fa-solid fa-mobile-screen-button"
+                       style="font-size:6rem;color:var(--teal-color);"></i>
+
+                    <div class="otp-badge"
+                         style="
+                            position:absolute;
+                            background:var(--gold-color);
+                            color:#000;
+                            padding:0.3rem 0.7rem;
+                            border-radius:8px;
+                            font-weight:800;
+                            font-family:var(--font-english);
+                            font-size:1rem;
+                            top:40%;
+                            left:calc(50% - 2rem);">
+
+                        4 8 7 2
+
                     </div>
-                </section>
 
-                <section class="slide" id="slide-24">
-                    <div class="slide-content">
-                        <h2 class="slide-title"><i class="fa-solid fa-camera"></i> B. Biometric Identity Verification (Face ID & KYC)</h2>
-                        <div class="grid-2-1">
-                            <div class="card glass">
-                                <h3>Biometric Advertiser Validation</h3>
-                                <p>Leverages computer vision structures to verify individual identity records, effectively eliminating anonymous scam operations.</p>
-                                <ul class="styled-list" style="margin-top: 1rem;">
-                                    <li><i class="fa-solid fa-robot"></i> <strong>DeepFace Implementations:</strong> Uses **VGG-Face** templates to extract facial landmarks and calculate cosine similarity matrices securely.</li>
-                                    <li><i class="fa-solid fa-id-card"></i> <strong>Government Document Extraction:</strong> Parses official state IDs to confirm names and verify legal operational permission structures.</li>
-                                    <li><i class="fa-solid fa-circle-check"></i> <strong>Verified Badging:</strong> Awards successful profiles a distinct green trust badge, boosting consumer confidence for incoming newcomers.</li>
-                                </ul>
-                            </div>
-                            <div class="visual-placeholder flex-center">
-                                <div class="face-scan-box" style="position: relative; width: 140px; height: 140px; border: 2px solid var(--accent-color); border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; background: rgba(0,0,0,0.3);">
-                                    <i class="fa-solid fa-user-astronaut" style="font-size: 4rem; color: var(--text-secondary)"></i>
-                                    <div class="scan-bar" style="position: absolute; width: 100%; height: 2px; background: var(--accent-color); top: 0; animation: scan 2s infinite linear;"></div>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="slide" id="slide-24">
+
+    <div class="slide-content" style="justify-content:flex-start;">
+
+        <h2 class="slide-title">
+            <i class="fa-solid fa-camera"></i>
+            B. Biometric Identity Verification (Face ID & KYC)
+        </h2>
+
+        <!-- Video -->
+        <div class="mini-video-showcase"
+             style="display:flex;justify-content:center;margin-bottom:20px;">
+
+            <div class="mini-video-card" style="width:60%;">
+
+                <video
+                    style="height:220px;object-fit:cover;"
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture>
+
+                    <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/2026-05-08 04-40-34.mp4" type="video/mp4">
+
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-face-viewfinder"></i>
+                    Face ID & KYC Verification Demo
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Content -->
+        <div class="grid-2-1">
+
+            <div class="card glass">
+
+                <h3>Biometric Advertiser Validation</h3>
+
+                <p>
+                    Leverages advanced computer vision and biometric verification
+                    technologies to validate advertiser identities, preventing
+                    anonymous fraud and ensuring trusted real estate transactions.
+                </p>
+
+                <ul class="styled-list" style="margin-top:1rem;">
+
+                    <li>
+                        <i class="fa-solid fa-robot"></i>
+                        <strong>DeepFace Recognition:</strong>
+                        Uses VGG-Face embeddings to extract facial features and
+                        securely calculate similarity scores for identity matching.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-id-card"></i>
+                        <strong>Government ID Verification:</strong>
+                        Extracts and validates information from official identity
+                        documents to confirm legal ownership and authenticity.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <strong>Verified Trust Badge:</strong>
+                        Grants successfully verified users a trusted green badge,
+                        increasing platform credibility and buyer confidence.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="visual-placeholder flex-center">
+
+                <div class="face-scan-box"
+                     style="
+                        position:relative;
+                        width:150px;
+                        height:150px;
+                        border:2px solid var(--accent-color);
+                        border-radius:12px;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        overflow:hidden;
+                        background:rgba(0,0,0,.3);">
+
+                    <i class="fa-solid fa-user-astronaut"
+                       style="font-size:4rem;color:var(--text-secondary);"></i>
+
+                    <div class="scan-bar"
+                         style="
+                            position:absolute;
+                            width:100%;
+                            height:2px;
+                            background:var(--accent-color);
+                            top:0;
+                            animation:scan 2s infinite linear;">
                     </div>
-                </section>
 
-                <section class="slide" id="slide-25">
-                    <div class="slide-content">
-                        <h2 class="slide-title"><i class="fa-solid fa-credit-card"></i> C. Payment Gateway Integration & Card Validation</h2>
-                        <div class="grid-2-1">
-                            <div class="card glass">
-                                <h3>Securing Downpayments & Escrow Pipelines</h3>
-                                <p>Bridges core checkout frameworks with premium payment gateways, ensuring protection for both real estate enterprises and consumers.</p>
-                                <ul class="styled-list" style="margin-top: 1rem;">
-                                    <li><i class="fa-solid fa-shield-halved"></i> <strong>End-to-End Encryption:</strong> Ensures all credit card information remains completely tokenized, adhering strictly to PCI-DSS standards.</li>
-                                    <li><i class="fa-solid fa-circle-check"></i> <strong>Real-Time Transaction Risk Evaluation:</strong> Employs a specialized machine learning pipeline to spot unusual payment loops and flag compromised credit cards.</li>
-                                    <li><i class="fa-solid fa-receipt"></i> <strong>Automated Financial Invoicing:</strong> Generates secure digital receipts and registers token escrow holds, protecting downpayments from booking conflicts.</li>
-                                </ul>
-                            </div>
-                            <div class="visual-placeholder flex-center">
-                                <div class="payment-shield" style="position: relative; text-align: center;">
-                                    <i class="fa-solid fa-shield-virus" style="font-size: 6rem; color: var(--teal-color); filter: drop-shadow(0 0 10px rgba(13, 148, 136, 0.3));"></i>
-                                    <i class="fa-solid fa-credit-card" style="font-size: 2.5rem; color: var(--gold-color); position: absolute; top: 30%; left: calc(50% - 1.25rem);"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                </div>
 
-                <section class="slide" id="slide-26">
-                    <div class="slide-content">
-                        <h2 class="slide-title"><i class="fa-solid fa-user-lock"></i> D. Strict Role-Based Access Control (RBAC System)</h2>
-                        <div class="grid-2-1">
-                            <div class="card glass">
-                                <h3>Enforcing Boundary Protections</h3>
-                                <p>An ironclad authorization layer implemented across client interfaces and server-side endpoints to keep data isolated by role context.</p>
-                                <ul class="styled-list" style="margin-top: 0.5rem; font-size: 0.85rem;">
-                                    <li><strong>Admin:</strong> Exercises full platform control, manages escrow configurations, audits legal documents, and reviews systemic metrics.</li>
-                                    <li><strong>Landlord:</strong> Launches personal properties, reviews bids, coordinates negotiations, and accesses their explicit contract agreements.</li>
-                                    <li><strong>Company:</strong> Commands multi-broker sub-accounts, launches large compound layouts, and reviews combined corporate sales statistics.</li>
-                                    <li><strong>Tenant/Buyer:</strong> Explores listings, manages safe favorite bookmarks, queries the AI bot, and triggers downpayment booking pipelines.</li>
-                                </ul>
-                            </div>
-                            <div class="visual-placeholder flex-center" style="flex-direction: column; gap: 0.75rem;">
-                                <div class="role-badge admin" style="background: rgba(13,148,136,0.1); border: 1px solid var(--teal-color); color: var(--teal-color); padding: 0.5rem 1rem; border-radius: 8px; font-weight: 700; width: 80%; text-align: center;">Admin Access <i class="fa-solid fa-lock-open"></i></div>
-                                <div class="role-badge landlord" style="background: rgba(249,181,114,0.1); border: 1px solid var(--gold-color); color: var(--gold-color); padding: 0.5rem 1rem; border-radius: 8px; font-weight: 700; width: 80%; text-align: center;">Landlord Access <i class="fa-solid fa-lock"></i></div>
-                                <div class="role-badge tenant" style="background: rgba(99,102,241,0.1); border: 1px solid var(--accent-color); color: var(--accent-color); padding: 0.5rem 1rem; border-radius: 8px; font-weight: 700; width: 80%; text-align: center;">Tenant Access <i class="fa-solid fa-lock"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            </div>
 
+        </div>
+
+    </div>
+
+</section>
+
+<section class="slide" id="slide-25">
+
+    <div class="slide-content" style="justify-content:flex-start;">
+
+        <h2 class="slide-title">
+            <i class="fa-solid fa-credit-card"></i>
+            C. Payment Gateway Integration & Card Validation
+        </h2>
+
+        <!-- Video -->
+        <div class="mini-video-showcase"
+             style="display:flex;justify-content:center;margin-bottom:20px;">
+
+            <div class="mini-video-card" style="width:60%;">
+
+                <video
+                    style="height:220px;object-fit:cover;"
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture>
+
+                    <source src="videos/payment-gateway.mp4" type="video/mp4">
+
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-credit-card"></i>
+                    Payment Gateway & Card Validation Demo
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Content -->
+        <div class="grid-2-1">
+
+            <div class="card glass">
+
+                <h3>Securing Downpayments & Escrow Pipelines</h3>
+
+                <p>
+                    Bridges core checkout frameworks with premium payment gateways,
+                    ensuring protection for both real estate enterprises and consumers.
+                </p>
+
+                <ul class="styled-list" style="margin-top:1rem;">
+
+                    <li>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <strong>End-to-End Encryption:</strong>
+                        Ensures all credit card information remains completely
+                        tokenized, adhering strictly to PCI-DSS standards.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <strong>Real-Time Transaction Risk Evaluation:</strong>
+                        Employs a specialized machine learning pipeline to detect
+                        unusual payment patterns and flag compromised cards.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-receipt"></i>
+                        <strong>Automated Financial Invoicing:</strong>
+                        Generates secure digital receipts and registers token
+                        escrow holds, protecting downpayments from booking conflicts.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="visual-placeholder flex-center">
+
+                <div class="payment-shield"
+                     style="position:relative;text-align:center;">
+
+                    <i class="fa-solid fa-shield-virus"
+                       style="font-size:6rem;
+                              color:var(--teal-color);
+                              filter:drop-shadow(0 0 10px rgba(13,148,136,.3));">
+                    </i>
+
+                    <i class="fa-solid fa-credit-card"
+                       style="font-size:2.5rem;
+                              color:var(--gold-color);
+                              position:absolute;
+                              top:30%;
+                              left:calc(50% - 1.25rem);">
+                    </i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="slide" id="slide-26">
+
+    <div class="slide-content"
+         style="justify-content:flex-start;gap:15px;padding:20px;">
+
+        <h2 class="slide-title" style="margin-bottom:5px;">
+            <i class="fa-solid fa-user-lock"></i>
+            D. Strict Role-Based Access Control (RBAC System)
+        </h2>
+
+        <!-- RBAC Image -->
+        <div style="display:flex;justify-content:center;align-items:center;">
+
+            <img
+                src="/Users/ibrahimamr/Downloads/Presentation_App/video/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٢٩.٣١ م.png"
+                alt="Role Based Access Control"
+                style="
+                    width:55%;
+                    max-height:180px;
+                    object-fit:contain;
+                    border-radius:12px;
+                    background:rgba(255,255,255,.04);
+                    border:1px solid rgba(255,255,255,.1);
+                    padding:8px;
+                ">
+
+        </div>
+
+        <!-- Content Card -->
+        <div class="card glass"
+             style="
+                width:100%;
+                padding:18px;
+                font-size:.88rem;
+            ">
+
+            <h3 style="margin-bottom:8px;">
+                Enforcing Boundary Protections
+            </h3>
+
+            <p style="margin-bottom:15px;line-height:1.5;">
+                An ironclad authorization layer implemented across client
+                interfaces and server-side endpoints to keep data isolated
+                according to authenticated user roles.
+            </p>
+
+            <div style="
+                display:grid;
+                grid-template-columns:repeat(2,1fr);
+                gap:12px;
+            ">
+
+                <div class="glass" style="padding:12px;border-radius:10px;">
+                    <strong style="color:var(--teal-color);">
+                        <i class="fa-solid fa-user-shield"></i> Admin
+                    </strong>
+                    <p style="margin-top:6px;font-size:.82rem;">
+                        Full platform control, escrow management,
+                        legal audits and analytics.
+                    </p>
+                </div>
+
+                <div class="glass" style="padding:12px;border-radius:10px;">
+                    <strong style="color:var(--gold-color);">
+                        <i class="fa-solid fa-house-user"></i> Landlord
+                    </strong>
+                    <p style="margin-top:6px;font-size:.82rem;">
+                        Property publishing, bid management,
+                        negotiations and contracts.
+                    </p>
+                </div>
+
+                <div class="glass" style="padding:12px;border-radius:10px;">
+                    <strong style="color:#8b5cf6;">
+                        <i class="fa-solid fa-building"></i> Company
+                    </strong>
+                    <p style="margin-top:6px;font-size:.82rem;">
+                        Multi-broker accounts, project launches,
+                        and corporate sales statistics.
+                    </p>
+                </div>
+
+                <div class="glass" style="padding:12px;border-radius:10px;">
+                    <strong style="color:#3b82f6;">
+                        <i class="fa-solid fa-user"></i> Tenant / Buyer
+                    </strong>
+                    <p style="margin-top:6px;font-size:.82rem;">
+                        Search properties, save favorites,
+                        use AI assistant and secure booking.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
                 <section class="slide" id="slide-27">
                     <div class="slide-content">
                         <h2 class="slide-title"><i class="fa-solid fa-list-check"></i> Top 12 Core Software Non-AI Features</h2>
@@ -1273,49 +2499,146 @@
                         </div>
                     </div>
                 </section>
+<section class="slide" id="slide-29">
 
-                <section class="slide" id="slide-29">
-                    <div class="slide-content">
-                        <h2 class="slide-title"><i class="fa-solid fa-sack-dollar"></i> Business Strategy & Monetization Streams</h2>
-                        <div class="grid-2" style="margin-top:1rem; gap:1rem;">
-                            <div class="card glass" style="padding:1rem;display:flex;align-items:flex-start;gap:0.8rem;">
-                                <div style="color:var(--gold-color);font-size:1.5rem;min-width:2rem;"><i class="fa-solid fa-crown"></i></div>
-                                <div>
-                                    <h4 style="margin:0 0 0.3rem;color:var(--gold-color);font-size:0.92rem;">Corporate Tiers (B2B Premium)</h4>
-                                    <p style="margin:0;color:var(--text-secondary);font-size:0.78rem;">Monthly and annual subscription models for developers to unlock compound design views, team assignments, and target geo-analytics.</p>
-                                </div>
-                            </div>
-                            <div class="card glass" style="padding:1rem;display:flex;align-items:flex-start;gap:0.8rem;">
-                                <div style="color:var(--gold-color);font-size:1.5rem;min-width:2rem;"><i class="fa-solid fa-handshake"></i></div>
-                                <div>
-                                    <h4 style="margin:0 0 0.3rem;color:var(--gold-color);font-size:0.92rem;">Transaction Commissions</h4>
-                                    <p style="margin:0;color:var(--text-secondary);font-size:0.78rem;">A competitive, minor percentage commission applied to verified sales and leases finalized through our secure digital signature pipeline.</p>
-                                </div>
-                            </div>
-                            <div class="card glass" style="padding:1rem;display:flex;align-items:flex-start;gap:0.8rem;">
-                                <div style="color:var(--gold-color);font-size:1.5rem;min-width:2rem;"><i class="fa-solid fa-bullhorn"></i></div>
-                                <div>
-                                    <h4 style="margin:0 0 0.3rem;color:var(--gold-color);font-size:0.92rem;">Promoted Property Ad Slots</h4>
-                                    <p style="margin:0;color:var(--text-secondary);font-size:0.78rem;">Allows brokers to sponsor listings, securing elevated priority positions inside search grids and user recommendation matrices.</p>
-                                </div>
-                            </div>
-                            <div class="card glass" style="padding:1rem;display:flex;align-items:flex-start;gap:0.8rem;">
-                                <div style="color:var(--gold-color);font-size:1.5rem;min-width:2rem;"><i class="fa-solid fa-chart-pie"></i></div>
-                                <div>
-                                    <h4 style="margin:0 0 0.3rem;color:var(--gold-color);font-size:0.92rem;">Premium Data Analytical API</h4>
-                                    <p style="margin:0;color:var(--text-secondary);font-size:0.78rem;">Monetizes aggregated market trend metrics and financial projections for institutional property developers via secure API subscriptions.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="margin-top:1rem;padding:0.8rem 1.2rem;background:rgba(255,199,0,0.07);border:1px solid rgba(255,199,0,0.2);border-radius:12px;display:flex;justify-content:space-around;text-align:center;">
-                            <div><div style="font-size:1.2rem;color:var(--gold-color);font-weight:700;">B2B</div><div style="font-size:0.7rem;color:var(--text-secondary);">Real Estate Firms</div></div>
-                            <div style="width:1px;background:rgba(255,255,255,0.1);"></div>
-                            <div><div style="font-size:1.2rem;color:var(--gold-color);font-weight:700;">B2C</div><div style="font-size:0.7rem;color:var(--text-secondary);">Landlords & Seekers</div></div>
-                            <div style="width:1px;background:rgba(255,255,255,0.1);"></div>
-                            <div><div style="font-size:1.2rem;color:var(--gold-color);font-weight:700;">API</div><div style="font-size:0.7rem;color:var(--text-secondary);">Investors & Analysts</div></div>
-                        </div>
-                    </div>
-                </section>
+    <div class="slide-content" style="justify-content:flex-start;gap:15px;">
+
+        <h2 class="slide-title">
+            <i class="fa-solid fa-sack-dollar"></i>
+            Business Strategy & Monetization Streams
+        </h2>
+
+        <!-- Business Model Image -->
+        <div style="display:flex;justify-content:center;align-items:center;">
+
+            <a href="/Users/ibrahimamr/Downloads/Presentation_App/video/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٣٧.٠٧ م.png" target="_blank">
+
+                <img
+                    src="/Users/ibrahimamr/Downloads/Presentation_App/video/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٣٧.٠٧ م.png"
+                    alt="Business Model"
+                    style="
+                        width:60%;
+                        max-height:180px;
+                        object-fit:contain;
+                        cursor:pointer;
+                        border-radius:14px;
+                        padding:8px;
+                        background:rgba(255,255,255,.04);
+                        border:1px solid rgba(255,255,255,.12);
+                        box-shadow:0 10px 25px rgba(0,0,0,.25);
+                        transition:.3s;
+                    "
+                    onmouseover="this.style.transform='scale(1.03)'"
+                    onmouseout="this.style.transform='scale(1)'">
+
+            </a>
+
+        </div>
+
+        <!-- Revenue Cards -->
+        <div class="grid-2" style="gap:1rem;">
+
+            <div class="card glass" style="padding:1rem;display:flex;gap:.8rem;">
+                <div style="color:var(--gold-color);font-size:1.5rem;">
+                    <i class="fa-solid fa-crown"></i>
+                </div>
+
+                <div>
+                    <h4 style="color:var(--gold-color);font-size:.92rem;">
+                        Corporate Tiers (B2B Premium)
+                    </h4>
+
+                    <p style="font-size:.78rem;">
+                        Monthly and annual subscriptions for developers,
+                        team management, geo analytics and premium tools.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card glass" style="padding:1rem;display:flex;gap:.8rem;">
+                <div style="color:var(--gold-color);font-size:1.5rem;">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+
+                <div>
+                    <h4 style="color:var(--gold-color);font-size:.92rem;">
+                        Transaction Commissions
+                    </h4>
+
+                    <p style="font-size:.78rem;">
+                        Small commission on verified sales and rental
+                        agreements completed through the platform.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card glass" style="padding:1rem;display:flex;gap:.8rem;">
+                <div style="color:var(--gold-color);font-size:1.5rem;">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+
+                <div>
+                    <h4 style="color:var(--gold-color);font-size:.92rem;">
+                        Promoted Property Ads
+                    </h4>
+
+                    <p style="font-size:.78rem;">
+                        Sponsored listings with higher visibility in search
+                        results and recommendation feeds.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card glass" style="padding:1rem;display:flex;gap:.8rem;">
+                <div style="color:var(--gold-color);font-size:1.5rem;">
+                    <i class="fa-solid fa-chart-pie"></i>
+                </div>
+
+                <div>
+                    <h4 style="color:var(--gold-color);font-size:.92rem;">
+                        Premium Analytics API
+                    </h4>
+
+                    <p style="font-size:.78rem;">
+                        Subscription-based API providing market insights,
+                        forecasts and investment analytics.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Business Types -->
+        <div style="
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            padding:12px;
+            border-radius:12px;
+            background:rgba(255,199,0,.07);
+            border:1px solid rgba(255,199,0,.2);
+        ">
+
+            <div style="text-align:center;">
+                <div style="font-size:1.2rem;color:var(--gold-color);font-weight:700;">B2B</div>
+                <div style="font-size:.72rem;">Real Estate Firms</div>
+            </div>
+
+            <div style="text-align:center;">
+                <div style="font-size:1.2rem;color:var(--gold-color);font-weight:700;">B2C</div>
+                <div style="font-size:.72rem;">Landlords & Seekers</div>
+            </div>
+
+            <div style="text-align:center;">
+                <div style="font-size:1.2rem;color:var(--gold-color);font-weight:700;">API</div>
+                <div style="font-size:.72rem;">Investors & Analysts</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
                 <section class="slide" id="slide-30">
                     <div class="slide-content">
@@ -1431,51 +2754,148 @@
                         </div>
                     </div>
                 </section>
+<section class="slide" id="slide-32">
 
-                <section class="slide" id="slide-32">
-                    <div class="slide-content">
-                        <h2 class="slide-title"><i class="fa-solid fa-desktop"></i> Key UI Screens Preview</h2>
-                        <div class="grid-2" style="margin-top:1rem; gap:1rem;">
-                            <div class="card glass" style="padding:0.9rem;">
-                                <div style="background:linear-gradient(135deg,rgba(97,218,251,0.08),rgba(97,218,251,0.02));border:1px solid rgba(97,218,251,0.2);border-radius:8px;padding:0.7rem;margin-bottom:0.6rem;">
-                                    <div style="display:flex;gap:0.3rem;margin-bottom:0.4rem;"><span style="width:7px;height:7px;border-radius:50%;background:#f87171;display:inline-block;"></span><span style="width:7px;height:7px;border-radius:50%;background:#fbbf24;display:inline-block;"></span><span style="width:7px;height:7px;border-radius:50%;background:#4ade80;display:inline-block;"></span></div>
-                                    <div style="font-size:0.72rem;color:rgba(97,218,251,0.85);">🔍 Find a 3-bedroom flat in Maadi...</div>
-                                    <div style="font-size:0.65rem;color:rgba(255,255,255,0.4);margin-top:0.3rem;">Results: 142 Listings • Organized via Semantic Ranking</div>
-                                </div>
-                                <h4 style="margin:0 0 0.2rem;color:#61dafb;font-size:0.83rem;"><i class="fa-solid fa-magnifying-glass"></i> Semantic Search View</h4>
-                                <p style="margin:0;color:var(--text-secondary);font-size:0.73rem;">Processes the structural meaning of user inputs to deliver accurate results.</p>
-                            </div>
-                            <div class="card glass" style="padding:0.9rem;">
-                                <div style="background:linear-gradient(135deg,rgba(249,181,114,0.08),rgba(249,181,114,0.02));border:1px solid rgba(249,181,114,0.2);border-radius:8px;padding:0.7rem;margin-bottom:0.6rem;">
-                                    <div style="display:flex;gap:0.3rem;margin-bottom:0.4rem;"><span style="width:7px;height:7px;border-radius:50%;background:#f87171;display:inline-block;"></span><span style="width:7px;height:7px;border-radius:50%;background:#fbbf24;display:inline-block;"></span><span style="width:7px;height:7px;border-radius:50%;background:#4ade80;display:inline-block;"></span></div>
-                                    <div style="font-size:0.72rem;color:rgba(249,181,114,0.9);">🤖 Hello! Scanning properties for you...</div>
-                                    <div style="font-size:0.65rem;color:rgba(255,255,255,0.6);margin-top:0.2rem;">👤 Need a 2-bed apartment under 3000/month</div>
-                                    <div style="font-size:0.65rem;color:rgba(249,181,114,0.9);margin-top:0.2rem;">🤖 Found 8 options! Match Score: 94%</div>
-                                </div>
-                                <h4 style="margin:0 0 0.2rem;color:#f9b572;font-size:0.83rem;"><i class="fa-solid fa-robot"></i> AI Chatbot Advisor Interface</h4>
-                                <p style="margin:0;color:var(--text-secondary);font-size:0.73rem;">Features integrated match scoring and asynchronous database tracking updates.</p>
-                            </div>
-                            <div class="card glass" style="padding:0.9rem;">
-                                <div style="background:linear-gradient(135deg,rgba(78,205,196,0.08),rgba(78,205,196,0.02));border:1px solid rgba(78,205,196,0.2);border-radius:8px;padding:0.7rem;margin-bottom:0.6rem;">
-                                    <div style="display:flex;gap:0.3rem;margin-bottom:0.4rem;"><span style="width:7px;height:7px;border-radius:50%;background:#f87171;display:inline-block;"></span><span style="width:7px;height:7px;border-radius:50%;background:#fbbf24;display:inline-block;"></span><span style="width:7px;height:7px;border-radius:50%;background:#4ade80;display:inline-block;"></span></div>
-                                    <div style="font-size:0.72rem;color:rgba(78,205,196,0.9);">📊 Landlord / Corporate Dashboard</div>
-                                    <div style="font-size:0.65rem;color:rgba(255,255,255,0.5);margin-top:0.3rem;">✅ Docs Approved · 5 Active Ads · 2 Offers Pending</div>
-                                </div>
-                                <h4 style="margin:0 0 0.2rem;color:#4ecdc4;font-size:0.83rem;"><i class="fa-solid fa-gauge-high"></i> Corporate Control Panel</h4>
-                                <p style="margin:0;color:var(--text-secondary);font-size:0.73rem;">Enables efficient tracking of properties, financial bids, lease documents, and KYC approvals.</p>
-                            </div>
-                            <div class="card glass" style="padding:0.9rem;">
-                                <div style="background:linear-gradient(135deg,rgba(155,89,182,0.08),rgba(155,89,182,0.02));border:1px solid rgba(155,89,182,0.2);border-radius:8px;padding:0.7rem;margin-bottom:0.6rem;">
-                                    <div style="display:flex;gap:0.3rem;margin-bottom:0.4rem;"><span style="width:7px;height:7px;border-radius:50%;background:#f87171;display:inline-block;"></span><span style="width:7px;height:7px;border-radius:50%;background:#fbbf24;display:inline-block;"></span><span style="width:7px;height:7px;border-radius:50%;background:#4ade80;display:inline-block;"></span></div>
-                                    <div style="font-size:0.72rem;color:rgba(200,160,220,0.9);">📄 Lease Contract — Ready to Sign</div>
-                                    <div style="font-size:0.65rem;color:rgba(255,255,255,0.5);margin-top:0.3rem;">⚠️ AI Flagged: Clause 7 requires legal revision</div>
-                                </div>
-                                <h4 style="margin:0 0 0.2rem;color:#c8a0e0;font-size:0.83rem;"><i class="fa-solid fa-file-signature"></i> Smart Contract Panel</h4>
-                                <p style="margin:0;color:var(--text-secondary);font-size:0.73rem;">Audits contract terms and flags potential legal risks before digital signature creation.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+    <div class="slide-content" style="justify-content:flex-start;">
+
+        <h2 class="slide-title">
+            <i class="fa-solid fa-desktop"></i>
+            Key UI Screens & System Demo
+        </h2>
+
+        <!-- ===================== Videos ===================== -->
+
+        <div style="
+            display:flex;
+            gap:15px;
+            justify-content:center;
+            margin:20px 0;
+        ">
+
+            <div class="mini-video-card" style="flex:1;max-width:32%;">
+
+                <video
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture
+                    style="width:100%;border-radius:12px;">
+
+                    <source src="videos/demo1.mp4" type="video/mp4">
+
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-house"></i>
+                        All system Demo
+                </div>
+
+            </div>
+
+            <div class="mini-video-card" style="flex:1;max-width:32%;">
+
+                <video
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture
+                    style="width:100%;border-radius:12px;">
+
+                    <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/Company Video.mp4" type="video/mp4">
+
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-robot"></i>
+                    Company Demo
+                </div>
+
+            </div>
+
+            <div class="mini-video-card" style="flex:1;max-width:32%;">
+
+                <video
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    disablePictureInPicture
+                    style="width:100%;border-radius:12px;">
+
+                    <source src="/Users/ibrahimamr/Downloads/Presentation_App/video/RealChat.mp4" type="video/mp4">
+
+                </video>
+
+                <div class="video-caption">
+                    <i class="fa-solid fa-chart-line"></i>
+                     Real-time chat Demo
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ===================== Images ===================== -->
+
+        <div style="
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            gap:12px;
+            margin-top:10px;
+        ">
+
+            <a href="/Users/ibrahimamr/Downloads/Presentation_App/img/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٤٩.٣٥ م.png" target="_blank">
+                <img src="/Users/ibrahimamr/Downloads/Presentation_App/img/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٤٩.٣٥ م.png"
+                     style="width:100%;height:120px;object-fit:cover;border-radius:12px;border:1px solid rgba(255,255,255,.12);cursor:pointer;">
+            </a>
+
+            <a href="/Users/ibrahimamr/Downloads/Presentation_App/img/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٥٠.٠٣ م.png" target="_blank">
+                <img src="/Users/ibrahimamr/Downloads/Presentation_App/img/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٥٠.٠٣ م.png"
+                     style="width:100%;height:120px;object-fit:cover;border-radius:12px;border:1px solid rgba(255,255,255,.12);cursor:pointer;">
+            </a>
+
+            <a href="/Users/ibrahimamr/Downloads/Presentation_App/img/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٥٠.٤٠ م.png" target="_blank">
+                <img src="/Users/ibrahimamr/Downloads/Presentation_App/img/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٥٠.٤٠ م.png"
+                     style="width:100%;height:120px;object-fit:cover;border-radius:12px;border:1px solid rgba(255,255,255,.12);cursor:pointer;">
+            </a>
+
+            <a href="/Users/ibrahimamr/Downloads/Presentation_App/img/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٥١.٠٥ م.png" target="_blank">
+                <img src="/Users/ibrahimamr/Downloads/Presentation_App/img/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٥١.٠٥ م.png"
+                     style="width:100%;height:120px;object-fit:cover;border-radius:12px;border:1px solid rgba(255,255,255,.12);cursor:pointer;">
+            </a>
+
+            <a href="/Users/ibrahimamr/Downloads/Presentation_App/img/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٥١.٤٦ م.png" target="_blank">
+                <img src="/Users/ibrahimamr/Downloads/Presentation_App/img/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٥١.٤٦ م.png"
+                     style="width:100%;height:120px;object-fit:cover;border-radius:12px;border:1px solid rgba(255,255,255,.12);cursor:pointer;">
+            </a>
+
+            <a href="/Users/ibrahimamr/Downloads/Presentation_App/img/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٥٢.٠١ م.png" target="_blank">
+                <img src="/Users/ibrahimamr/Downloads/Presentation_App/img/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٥٢.٠١ م.png"
+                     style="width:100%;height:120px;object-fit:cover;border-radius:12px;border:1px solid rgba(255,255,255,.12);cursor:pointer;">
+            </a>
+
+            <a href="/Users/ibrahimamr/Downloads/Presentation_App/img/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٥٢.٥٤ م.png" target="_blank">
+                <img src="/Users/ibrahimamr/Downloads/Presentation_App/img/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٥٢.٥٤ م.png"
+                     style="width:100%;height:120px;object-fit:cover;border-radius:12px;border:1px solid rgba(255,255,255,.12);cursor:pointer;">
+            </a>
+
+            <a href="/Users/ibrahimamr/Downloads/Presentation_App/img/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٥٥.٣٧ م.png" target="_blank">
+                <img src="/Users/ibrahimamr/Downloads/Presentation_App/img/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٥٥.٣٧ م.png"
+                     style="width:100%;height:120px;object-fit:cover;border-radius:12px;border:1px solid rgba(255,255,255,.12);cursor:pointer;">
+            </a>
+
+            <a href="/Users/ibrahimamr/Downloads/Presentation_App/img/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٥٧.١٢ م.png" target="_blank">
+                <img src="/Users/ibrahimamr/Downloads/Presentation_App/img/‏لقطة الشاشة ١٤٤٧-١٢-٢٢ في ٨.٥٧.١٢ م.png"
+                     style="width:100%;height:120px;object-fit:cover;border-radius:12px;border:1px solid rgba(255,255,255,.12);cursor:pointer;">
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
                 <section class="slide" id="slide-33">
                     <div class="slide-content">
@@ -1615,63 +3035,319 @@
                         </p>
                     </div>
                 </section>
+<section class="slide" id="slide-36">
+    <div class="slide-content">
 
-                <section class="slide" id="slide-36">
-                    <div class="slide-content">
-                        <h2 class="slide-title"><i class="fa-solid fa-database"></i> Training Datasets & Production Data Sources</h2>
-                        <p class="slide-description">Our specialized machine learning modules are trained and benchmarked across comprehensive data structures:</p>
-                        
-                        <div class="grid-3" style="margin-top: 1rem; gap: 0.9rem; font-size: 0.8rem;">
-                            <div class="card glass" style="padding: 1rem; border-left: 3px solid var(--accent-color);">
-                                <h4 style="color: var(--accent-color); font-size: 0.95rem; margin-top: 0; margin-bottom: 0.4rem;"><i class="fa-solid fa-house"></i> Property & Pricing Datasets</h4>
-                                <ul class="styled-list" style="padding-left: 1.2rem; margin: 0; font-size: 0.75rem;">
-                                    <li><strong>Kaggle Real Estate Data:</strong> Regional property records across local markets with over 150,000 baseline items.</li>
-                                    <li><strong>Web Scraping Core:</strong> Real-time price entries scraped from local public real estate platforms to update trending valuation paths.</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="card glass" style="padding: 1rem; border-left: 3px solid var(--gold-color);">
-                                <h4 style="color: var(--gold-color); font-size: 0.95rem; margin-top: 0; margin-bottom: 0.4rem;"><i class="fa-solid fa-face-smile"></i> Biometric Identity Datasets</h4>
-                                <ul class="styled-list" style="padding-left: 1.2rem; margin: 0; font-size: 0.75rem;">
-                                    <li><strong>LFW (Labeled Faces in the Wild):</strong> Used to evaluate DeepFace landmark models for precise facial alignment.</li>
-                                    <li><strong>CelebA Dataset:</strong> Used to refine target classification models under varying lightning backgrounds.</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="card glass" style="padding: 1rem; border-left: 3px solid var(--teal-color);">
-                                <h4 style="color: var(--teal-color); font-size: 0.95rem; margin-top: 0; margin-bottom: 0.4rem;"><i class="fa-solid fa-file-invoice-dollar"></i> Registry Document Datasets</h4>
-                                <ul class="styled-list" style="padding-left: 1.2rem; margin: 0; font-size: 0.75rem;">
-                                    <li><strong>RVL-CDIP Dataset:</strong> Corporate document catalog entries used to train automated file sorting models.</li>
-                                    <li><strong>Custom Annotated Records:</strong> Locally compiled, anonymous property deeds and corporate registers used to fine-tune regional language extraction.</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="card glass" style="padding: 1rem; border-left: 3px solid #ef4444;">
-                                <h4 style="color: #ef4444; font-size: 0.95rem; margin-top: 0; margin-bottom: 0.4rem;"><i class="fa-solid fa-image"></i> Forgery Detection Databases</h4>
-                                <ul class="styled-list" style="padding-left: 1.2rem; margin: 0; font-size: 0.75rem;">
-                                    <li><strong>CASIA Image Tampering Database:</strong> Comprehensive benchmark records used to spot splicing, copy-move editing, and pixel enhancements.</li>
-                                    <li><strong>IMD2020:</strong> Used to train networks to analyze compression histories and reveal image file manipulations.</li>
-                                </ul>
-                            </div>
+        <h2 class="slide-title">
+            <i class="fa-solid fa-database"></i>
+            Training Datasets & Production Data Sources
+        </h2>
 
-                            <div class="card glass" style="padding: 1rem; border-left: 3px solid #c8a0e0;">
-                                <h4 style="color: #c8a0e0; font-size: 0.95rem; margin-top: 0; margin-bottom: 0.4rem;"><i class="fa-solid fa-comments"></i> NLP & Chatbot Datasets</h4>
-                                <ul class="styled-list" style="padding-left: 1.2rem; margin: 0; font-size: 0.75rem;">
-                                    <li><strong>AraSenti-Twitter Dataset:</strong> Training logs used to classify chat sentiment and isolate toxic user feedback.</li>
-                                    <li><strong>Custom Dialect Matrix:</strong> Hand-crafted regional chat variations built to improve intent parsing accuracy.</li>
-                                </ul>
-                            </div>
+        <p class="slide-description">
+            Our property valuation models are trained and validated using publicly available
+            Egyptian housing datasets together with a custom-built production dataset.
+        </p>
 
-                            <div class="card glass" style="padding: 1rem; border-left: 3px solid #61dafb;">
-                                <h4 style="color: #61dafb; font-size: 0.95rem; margin-top: 0; margin-bottom: 0.4rem;"><i class="fa-solid fa-user-shield"></i> Financial Risk Databases</h4>
-                                <ul class="styled-list" style="padding-left: 1.2rem; margin: 0; font-size: 0.75rem;">
-                                    <li><strong>Kaggle Credit Risk Data:</strong> Extensive credit profiles used to map structural probability matrices for installment defaults.</li>
-                                    <li><strong>IEEE Fraud Detection:</strong> Large transactional data logs used to train algorithms to recognize compromised payment attempts.</li>
-                                </ul>
-                            </div>
+        <div class="grid-2" style="margin-top:1rem; gap:1rem;">
+
+            <!-- Card 1 -->
+            <div class="card glass" style="padding:1rem; border-left:3px solid var(--accent-color);">
+                <h4 style="color:var(--accent-color); font-size:0.95rem; margin-top:0; margin-bottom:0.5rem;">
+                    <i class="fa-solid fa-house"></i>
+                    Public Housing Datasets
+                </h4>
+
+                <ul class="styled-list" style="padding-left:1.2rem; margin:0; font-size:0.75rem;">
+
+                    <li>
+                        <strong>Egypt-House-Prices-Predictor</strong><br>
+                        https://share.google/I7rDyKpGk5O1Z6bUE
+                    </li>
+
+                    <li>
+                        <strong>egypt_House_prices</strong><br>
+                        https://share.google/W4JEjoJCXlg1zGqBj
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card glass" style="padding:1rem; border-left:3px solid var(--gold-color);">
+                <h4 style="color:var(--gold-color); font-size:0.95rem; margin-top:0; margin-bottom:0.5rem;">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Additional Benchmark Datasets
+                </h4>
+
+                <ul class="styled-list" style="padding-left:1.2rem; margin:0; font-size:0.75rem;">
+
+                    <li>
+                        <strong>Egypt_Houses_Price</strong><br>
+                        https://share.google/3qBQHeLbeClNTVOzE
+                    </li>
+
+                    <li>
+                        <strong>Houses Price in Cairo New 2023</strong><br>
+                        https://share.google/CSoA2ZvfQIFsboadY
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card glass" style="padding:1rem; border-left:3px solid var(--teal-color);">
+                <h4 style="color:var(--teal-color); font-size:0.95rem; margin-top:0; margin-bottom:0.5rem;">
+                    <i class="fa-solid fa-server"></i>
+                    Custom Production Dataset
+                </h4>
+
+                <ul class="styled-list" style="padding-left:1.2rem; margin:0; font-size:0.75rem;">
+                    <li>
+                        <strong>Custom Egyptian Property Dataset</strong>
+                    </li>
+
+                    <li>
+                        Built and developed by our team using collected and cleaned Egyptian
+                        real estate listings from multiple trusted sources.
+                    </li>
+
+                    <li>
+                        Includes property features, location information, prices,
+                        engineered attributes, and validated records for machine learning.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card glass" style="padding:1rem; border-left:3px solid #61dafb;">
+                <h4 style="color:#61dafb; font-size:0.95rem; margin-top:0; margin-bottom:0.5rem;">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Data Processing Pipeline
+                </h4>
+
+                <ul class="styled-list" style="padding-left:1.2rem; margin:0; font-size:0.75rem;">
+                    <li>Data Cleaning & Validation</li>
+                    <li>Duplicate Record Removal</li>
+                    <li>Feature Engineering</li>
+                    <li>Data Normalization & Model Preparation</li>
+                </ul>
+            </div>
+
+            <div class="card glass" style="padding:1rem; border-left:3px solid #00d084;">
+    <h4 style="color:#00d084; font-size:0.95rem; margin-top:0; margin-bottom:0.5rem;">
+        <i class="fa-solid fa-database"></i>
+        Custom-Collected Datasets
+    </h4>
+
+    <ul class="styled-list" style="padding-left:1.2rem; margin:0; font-size:0.75rem;">
+        <li>Phone Number Dataset (Collected from Scratch)</li>
+        <li>Spam Message Corpus (Custom Built)</li>
+        <li>Arabic Offensive & Profanity Dictionary</li>
+        <li>Manually Labeled Training & Validation Samples</li>
+    </ul>
+</div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="slide" id="slide-40">
+
+    <div class="slide-content">
+
+        <h2 class="slide-title">
+            <i class="fa-solid fa-cloud"></i>
+            Production Deployment & Cloud Infrastructure
+        </h2>
+
+        <div class="grid-2-1" style="margin-top:1rem;gap:1.5rem;">
+
+            <!-- Left Side -->
+            <div class="card glass" style="padding:1.5rem;">
+
+                <h3 style="color:var(--gold-color);margin-bottom:1rem;">
+                    <i class="fa-solid fa-server"></i>
+                    Deployment Architecture
+                </h3>
+
+                <p style="font-size:.85rem;line-height:1.7;color:var(--text-secondary);">
+
+                    AqarMind is deployed using a modern containerized architecture,
+                    where all backend services, AI modules, databases, and supporting
+                    components are orchestrated inside a unified Docker environment.
+
+                    The platform follows the new modular architecture while running
+                    efficiently inside a single production container stack, providing
+                    simplified management, portability, and rapid deployment.
+
+                </p>
+
+                <ul class="styled-list"
+                    style="margin-top:1rem;font-size:.82rem;line-height:1.7;">
+
+                    <li>
+                        <i class="fa-solid fa-box"></i>
+                        <strong>Containerization:</strong>
+                        Docker-based deployment with integrated services.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-network-wired"></i>
+                        <strong>Architecture:</strong>
+                        EDMMA Architecture with AI Services.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <strong>Hosting:</strong>
+                        Google Cloud Production Server.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-hard-drive"></i>
+                        <strong>Storage:</strong>
+                        150 GB SSD allocated for AI models, media assets,
+                        databases, and system logs.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong>Memory:</strong>
+                        16 GB RAM optimized for AI inference,
+                        caching, and concurrent processing.
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-microchip"></i>
+                        <strong>Scalable Runtime:</strong>
+                        Supports simultaneous AI requests,
+                        document analysis, semantic search,
+                        and chatbot execution.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Right Side -->
+            <div class="card glass"
+                 style="
+                    padding:1.5rem;
+                    display:flex;
+                    flex-direction:column;
+                    justify-content:center;
+                    align-items:center;
+                    text-align:center;
+                    gap:1rem;
+                    background:linear-gradient(
+                        135deg,
+                        rgba(13,148,136,.08),
+                        rgba(0,0,0,.2)
+                    );
+                 ">
+
+                <div style="font-size:70px;color:var(--gold-color);">
+                    <i class="fa-solid fa-cloud"></i>
+                </div>
+
+                <h3 style="margin:0;">
+                    Live Production Environment
+                </h3>
+
+               <div style="
+    width:100%;
+    padding:15px;
+    border-radius:12px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+">
+
+    <div style="font-size:.85rem;color:var(--gold-color);">
+        🌐 Public Domain
+    </div>
+
+    <a
+        href="https://aqarmind.duckdns.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="
+            display:block;
+            margin-top:8px;
+            font-size:1rem;
+            font-weight:700;
+            color:var(--gold-color);
+            text-decoration:none;
+            word-break:break-all;
+            transition:.3s;
+        "
+        onmouseover="this.style.textDecoration='underline'"
+        onmouseout="this.style.textDecoration='none'"
+    >
+        https://aqarmind.duckdns.org/
+    </a>
+
+</div>
+
+                <div style="
+                    display:grid;
+                    grid-template-columns:repeat(2,1fr);
+                    gap:10px;
+                    width:100%;
+                ">
+
+                    <div class="glass"
+                         style="padding:12px;border-radius:10px;">
+                        <div style="font-size:1.3rem;color:var(--gold-color);">
+                            150 GB
+                        </div>
+                        <div style="font-size:.75rem;">
+                            SSD Storage
                         </div>
                     </div>
-                </section>
+
+                    <div class="glass"
+                         style="padding:12px;border-radius:10px;">
+                        <div style="font-size:1.3rem;color:var(--gold-color);">
+                            16 GB
+                        </div>
+                        <div style="font-size:.75rem;">
+                            RAM
+                        </div>
+                    </div>
+
+                    <div class="glass"
+                         style="padding:12px;border-radius:10px;">
+                        <div style="font-size:1.3rem;color:var(--gold-color);">
+                            Docker
+                        </div>
+                        <div style="font-size:.75rem;">
+                            Containerized
+                        </div>
+                    </div>
+
+                    <div class="glass"
+                         style="padding:12px;border-radius:10px;">
+                        <div style="font-size:1.3rem;color:var(--gold-color);">
+                            Google Cloud
+                        </div>
+                        <div style="font-size:.75rem;">
+                            Production Server
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
 
                 <section class="slide" id="slide-37">
                     <div class="slide-content">

@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const slideIndicator = document.getElementById('slideIndicator');
     const progressBar = document.getElementById('progressBar');
     const menuList = document.querySelector('.slide-menu ul');
-    const slideOrder = [
-        0, 1, 2, 38, 3, 4, 5, 6, 7, 8, 28,
-        9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
-        19, 20, 21, 22, 23, 24, 25, 26, 27, 29,
-        30, 31, 33, 34, 35, 36, 32, 37
-    ];
+   const slideOrder = [
+    0, 1, 2, 39, 3, 4, 5, 6, 7, 8, 28,
+    9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+    19, 20, 21, 22, 23, 24, 25, 26, 27, 29,
+    30, 31, 33, 34, 35, 36, 32, 37,38
+];
     const displayToOriginal = slideOrder;
     const originalToDisplay = new Map(slideOrder.map((originalIndex, displayIndex) => [originalIndex, displayIndex]));
     const orderedSlides = slideOrder.map(index => slides[index]);
@@ -560,9 +560,11 @@ document.addEventListener('DOMContentLoaded', () => {
         34: "In this slide, we compare AqarMind with the most prominent competitors in the Egyptian and Arab market: Aqarmap, OLX Real Estate, and Nawy. The comparison clearly shows that AqarMind is the only platform that combines biometric Face ID verification and KYC, AI-based fake image detection, a chatbot that automatically searches in the background, automatic ownership document analysis, installment risk assessment, as well as an innovative EDMMA architecture published in IEEE TechRxiv. This comprehensive combination is unmatched in any local real estate platform currently.",
         35: "This slide presents the AqarMind development roadmap in 4 sequential phases. The central line and numbers have been highlighted to show the visual sequence more clearly during the presentation. Phase one is launching the React Native app for iOS and Android. Phase two is regional expansion into GCC countries. Phase three is integrating VR virtual reality tours for properties. Phase four is documenting contracts on Blockchain. The platform is originally designed with the EDMMA architecture to easily accommodate these phases without core restructuring.",
         36: "Here we review the data sources and training datasets used to train the AI in AqarMind. We rely on Kaggle Real Estate for property data, LFW and CelebA datasets for Face ID verification with DeepFace, RVL-CDIP dataset for document inspection training, CASIA Image Tampering Database for detecting digital image tampering and manipulation, AraSenti-Twitter for text sentiment analysis, and Credit Risk dataset for assessing financial default probabilities.",
-        37: "We have reached the end of the presentation in 2026. We thank the esteemed judging committee and Dr. Mai El-Defrawi for providing the opportunity to present this research and development effort. The summary of AqarMind in numbers for 2026: 45 tightly integrated AI functions, 4 user roles with clear permissions, and a 38% improvement in response time thanks to the innovative EDMMA architecture published academically. We recommend full integration with government databases, training natural language understanding models on local dialects, and developing biometric security. We welcome all your questions and the esteemed discussion.",
-        38: "This slide shows the actual libraries used in the platform after removing duplicates and grouping supporting packages. We organized them into web and realtime, AI and biometrics, data and messaging, and runtime support packages. The goal is to make the stack easy to translate and easy to present, while showing that every major capability is backed by a clear and intentional dependency choice."
-    };
+37: "This slide presents the production deployment of AqarMind. The platform is deployed using a modern Docker-based containerized architecture running on Google Cloud infrastructure. All backend services, AI modules, databases, and supporting components operate together within a unified deployment environment based on the EDMMA architecture. The production server is configured with 150 GB SSD storage and 16 GB RAM to efficiently handle AI inference, document analysis, semantic search, and concurrent chatbot requests. The platform is publicly accessible through the domain https://aqarmind.duckdns.org, demonstrating a complete end-to-end deployment from development to a live production environment.",
+
+38: "We have reached the end of our presentation. We sincerely thank the honorable judging committee and our supervisor, Dr. Mai El-Defrawi, for their continuous guidance and support throughout this project. AqarMind combines 45 integrated AI functions, four clearly defined user roles, an IEEE-published EDMMA architecture, and an intelligent security-first approach to redefine digital real estate platforms. We hope our work contributes to building safer, smarter, and more reliable property ecosystems. Thank you for your time, and we welcome your questions and discussion.",
+
+39: "This slide presents the actual libraries and frameworks used throughout the AqarMind platform. The dependencies are organized into logical groups including frontend technologies, backend frameworks, AI and machine learning libraries, document processing, biometric verification, messaging infrastructure, databases, and deployment tools. This organized stack demonstrates that every intelligent capability within the platform is supported by carefully selected production-ready technologies, ensuring scalability, maintainability, and high system performance."    };
 
     function applyDynamicBodyCopy(lang) {
         const setText = (node, value) => {
@@ -672,26 +674,69 @@ document.addEventListener('DOMContentLoaded', () => {
                     ],
                     footer: '<i class="fa-solid fa-rocket" style="color:var(--gold-color);"></i> The platform is designed with the scalable EDMMA architecture to absorb these phases without rewriting the core.'
                 },
-                slide36: {
-                    title: '<i class="fa-solid fa-database"></i> Datasets and Training Data Sources',
-                    desc: 'AI models in AqarMind were trained and evaluated using large and diverse datasets:',
-                    titles: [
-                        'Real Estate and Pricing Data',
-                        'Identity and Face Verification',
-                        'Document and Registry Inspection',
-                        'Image Tampering and Fraud Detection',
-                        'Natural Language and Chatbot Data',
-                        'Financial Security and Risk Data'
-                    ],
-                    bodies: [
-                        ['Kaggle Real Estate: property listings in Egypt and the Arab world (150K+ records).', 'Web Scraping Data: live listings and historical prices gathered from local property platforms to power recommendations.'],
-                        ['LFW (Labeled Faces in the Wild): for testing DeepFace and identity matching.', 'CelebA Dataset: for improving face extraction under noise and lighting variations.'],
-                        ['RVL-CDIP Dataset: for document classification and OCR routing.', 'Custom Annotated Dataset: locally labeled deeds, commercial registers, and Egyptian IDs aligned with legal documents.'],
-                        ['CASIA Image Tampering Database: a benchmark for cut-paste, pixel edits, and Photoshop manipulation.', 'IMD2020: used to train image-compression and image-layer inspection models.'],
-                        ['AraSenti-Twitter Dataset: for sentiment analysis and toxicity detection.', 'Custom Dialect Dataset: Egyptian dialect conversations and local real-estate terminology to better understand user intent.'],
-                        ['Kaggle Credit Risk Dataset: for installment-default probability models.', 'IEEE Fraud Detection: for suspicious payment behavior and payment-gateway protection.']
-                    ]
-                },
+slide36: {
+    title: '<i class="fa-solid fa-database"></i> Datasets and Training Data Sources',
+    desc: 'AqarMind AI models are trained and evaluated using public benchmark datasets, proprietary production data, and custom-collected datasets developed by our team.',
+
+    titles: [
+        'Real Estate & Pricing Data (Part 1)',
+        'Real Estate & Pricing Data (Part 2)',
+        'Identity & Face Verification',
+        'Document & Registry Inspection',
+        'Image Tampering & Fraud Detection',
+        'Natural Language & Financial Security',
+        'Proprietary & Custom-Collected Data'
+    ],
+
+    bodies: [
+        [
+            '<a href="https://share.google/I7rDyKpGk5O1Z6bUE" target="_blank">Egypt-House-Prices-Predictor</a>',
+            '<a href="https://share.google/W4JEjoJCXlg1zGqBj" target="_blank">egypt_House_prices</a>'
+        ],
+
+        [
+            '<a href="https://share.google/3qBQHeLbeClNTVOzE" target="_blank">Egypt_Houses_Price</a>',
+            '<a href="https://share.google/CSoA2ZvfQIFsboadY" target="_blank">Houses Price in Cairo New 2023</a>'
+        ],
+
+        [
+            'LFW (Labeled Faces in the Wild)',
+            'CelebA Face Dataset',
+            'DeepFace Identity Matching',
+            'Face Verification & Similarity Analysis'
+        ],
+
+        [
+            'RVL-CDIP Document Dataset',
+            'Custom Egyptian Property Deeds',
+            'Commercial Register Documents',
+            'OCR Annotated Legal Records'
+        ],
+
+        [
+            'CASIA Image Tampering Database',
+            'IMD2020 Image Manipulation Dataset',
+            'Forgery & Photoshop Detection',
+            'Image Compression Analysis'
+        ],
+
+        [
+            'AraSenti-Twitter Dataset',
+            'Custom Egyptian Dialect Dataset',
+            'IEEE Fraud Detection Dataset',
+            'Kaggle Credit Risk Dataset'
+        ],
+
+        [
+            'Phone Number Dataset (Collected from Scratch)',
+            'Spam & Scam Message Corpus',
+            'Arabic Offensive & Profanity Dictionary',
+            'Human-Labeled AI Training & Validation Samples'
+        ]
+    ]
+},
+
+
                 slide37: {
                     title: '<i class="fa-solid fa-graduation-cap"></i> Conclusion and Recommendations for 2026',
                     cardTitle: '<i class="fa-solid fa-quote-right"></i> Project Summary and Recommendations',
