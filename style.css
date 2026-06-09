@@ -2686,3 +2686,15 @@ video::-webkit-media-controls-mute-button {
 video {
     pointer-events: auto;
 }
+ html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide-viewport {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}

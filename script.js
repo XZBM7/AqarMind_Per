@@ -2024,8 +2024,14 @@ slide36: {
         
         loadSpeakerNotes(nextOriginalIndex);
         
-        nextMenuItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+const menuContainer = document.querySelector(".slide-menu");
 
+if (menuContainer) {
+    menuContainer.scrollTo({
+        top: nextMenuItem.offsetTop - 100,
+        behavior: "smooth"
+    });
+}
         triggerCustomSlideAnimations();
 
         transitionTimer = window.setTimeout(() => {
@@ -2210,6 +2216,7 @@ card.addEventListener('click', () => {
         });
     }
 
+    
     // Run Initialization
     init();
 });
