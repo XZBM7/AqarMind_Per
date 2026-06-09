@@ -26,7 +26,63 @@ document.addEventListener('DOMContentLoaded', () => {
     const originalToDisplay = new Map(slideOrder.map((originalIndex, displayIndex) => [originalIndex, displayIndex]));
     const orderedSlides = slideOrder.map(index => slides[index]);
     const orderedMenuItems = slideOrder.map(index => menuItems[index]);
-    
+    document.addEventListener("DOMContentLoaded", () => {
+
+    const videos = document.querySelectorAll(".lazy-video");
+
+    videos.forEach(video => {
+
+        video.preload = "none";
+
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            const video = entry.target;
+
+            if (entry.isIntersecting) {
+
+                if (!video.dataset.loaded) {
+
+                    video.preload = "metadata";
+                    video.load();
+
+                    video.dataset.loaded = "true";
+
+                }
+
+            } else {
+
+                video.pause();
+
+            }
+
+        });
+
+    }, {
+        rootMargin: "300px",
+        threshold: 0.05
+    });
+
+    videos.forEach(video => observer.observe(video));
+
+    document.addEventListener("play", function (e) {
+
+        videos.forEach(video => {
+
+            if (video !== e.target) {
+
+                video.pause();
+
+            }
+
+        });
+
+    }, true);
+
+});
     // UI Elements
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
