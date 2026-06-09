@@ -2040,6 +2040,32 @@ if (menuContainer) {
         }, 780);
     }
 
+    document.addEventListener("DOMContentLoaded", () => {
+
+    const videos = document.querySelectorAll("video");
+
+    videos.forEach(video => {
+
+        // كتم الفيديو
+        video.muted = true;
+        video.defaultMuted = true;
+        video.volume = 0;
+
+        // إذا حاول المستخدم فك الكتم يتم كتمه مرة أخرى
+        video.addEventListener("volumechange", () => {
+
+            if (!video.muted || video.volume > 0) {
+                video.muted = true;
+                video.defaultMuted = true;
+                video.volume = 0;
+            }
+
+        });
+
+    });
+
+});
+
     function updateProgress() {
         const percentage = ((currentSlide + 1) / totalSlides) * 100;
         progressBar.style.width = `${percentage}%`;

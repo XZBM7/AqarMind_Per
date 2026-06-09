@@ -2698,3 +2698,11 @@ body {
     height: 100vh;
     overflow: hidden;
 }
+video::-webkit-media-controls-volume-slider,
+video::-webkit-media-controls-mute-button {
+    display: none !important;
+}
+
+video::-webkit-media-controls {
+    overflow: hidden;
+}
