@@ -675,7 +675,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ]
                 },
                 slide32: {
-                    title: '<i class="fa-solid fa-desktop"></i> Key Platform Screens',
+                    title: '<i class="fa-solid fa-desktop"></i>  Key UI Screens & System Demo',
                     titles: [
                         '<i class="fa-solid fa-magnifying-glass"></i> Semantic Search Screen',
                         '<i class="fa-solid fa-robot"></i> AI Chatbot Screen',
